@@ -1,0 +1,104 @@
+\chapter{Pyramid Workflow}
+
+\section{Wire up}
+
+Connect Pyramid with a mini USB cable plugged in a standard USB power supply or a computer, and press the \textbf{on/off} button.
+
+
+\section{Sequencer workflow}
+
+\textbf{Pyramid is based on 64 tracks}. A track is a loop that contains polyphonic or monophonic notes, automations and effects, plays repeatedly and controls one of the musical instruments connected to MIDI A, MIDI B, USB or CV output.
+
+By muting/unmuting each track, you will be able to shape your song.
+
+\fitgraphics{workflow.png}
+
+Pyramid allows you to easily produce your tracks from scratch thanks to powerful creative tools, such as:
+\begin{itemize} %,itemindent=2cm,labelwidth=\itemindent,labelsep=0cm,align=left]
+% \begin{itemize}
+\item smart chord harmonizer,
+\item scales generator,
+\item beat repeat,
+\item hold and relatch,
+\item groundbreaking step sequencer (unlimited number of notes and CC messages per step, FX parameters step lock)
+\item euclidean sequencer,
+\item polyrhythmy \& polymetry,
+\item real-time effects.
+\end{itemize}
+
+Pyramid is an instant source of inspiration, to start and finish your song. You will never be out of ideas!
+
+
+\section{Tracks vs Sequences} 
+
+In Pyramid, a project song can include up to 64 tracks in total (from TR01A to TR16D). A track can either be a linear clip (e.g. a 384 bars track, with micro editing), a standard pattern (e.g. a 4 bars track), a polymetric pattern (e.g. a 1+1/4 bar track), a polyrhythmic pattern (e.g. a 8 bars track with 7/8 time signature)…
+
+A project song is composed of 16 sequences. A sequence is a group defining the 64 tracks mute states: you can see sequences as links to tracks. In each sequence, you can choose which track is unmmuted (active) or muted (inactive), in order to build your song or arrange your set:
+
+\fitgraphics{group_of_tracks.png}
+
+That means that you can choose to play at the same time 64 tracks in a single sequence, or mute/unmute the 64 tracks across in the 16 sequences: it's a great and versatile way to create songs very quickly.
+
+For example in \textbf{SE01 (sequence 01)}, only TR02 is unmuted. In \textbf{SE02}, TR02A and TR11A are unmuted. In \textbf{SE03}, TR01A, TR06A and TR15A are unmuted:
+
+\fitgraphics{tracks_vs_sequences.png}
+
+The TR02A of the \textbf{SE01} is always the same track as the TR02A of \textbf{SE02}. If you made a change on TR02A, it will apply on all sequences where TR02A is active (\textbf{SE01} and \textbf{SE02} in the example above).
+
+When the sequence changes, if a previously active track is still active in the next sequence, it will not restart from the beginning like a classic sequencer. It will continue to play \& loop and therefore keep its shift with the other tracks, to keep the polymetry running (see ``Note about track lengths concurrence \& sequences'' section). If you want to restart your track from the beginning like a classic sequencer, configure your track in ``relatch mode''.
+
+Moreover, if you want to add some MIDI effects on TR02A, you can assign a control (e.g. an encoder) for this effect, and affect the sound of the TR02A in real-time, no matter which sequence you are in.
+
+
+\section{Pyramid 4 modes in brief}
+
+Pyramid is a dynamic sequencer, allowing an user-friendly interaction between tracks and sequences. All modes are always accessibles, that means that you can launch sequences in \btn{seq} mode, then mute/unmute tracks in \btn{track} mode, play with effects, and even add notes and CC messages in \btn{live} and \btn{step}  modes.
+
+Press \btn{live}: record notes, CC automations of the current track. Use the built-in keypad or smartpads (8 pads that can be configured as chord generator, note repeat or scaled piano).
+
+\fithalfgraphics{LIVE.png}
+
+Press \btn{step}: fill steps of the current track with notes and chords thanks to the 16 pads of the \btn{NOTE} \& \btn{CHORD} stepmodes. Set up the velocity, width and offset of a note or a group of notes. Edit your live recording with surgical precision. Switch to the \btn{EUCLIDEAN} stepmode to auto-fill the steps. Switch to the \btn{CC MESSAGES} stepmode to create or edit MIDI CC automations. Switch to the \btn{EFFECTS} stepmode to create or edit effect parameters locks. Each step (and even microstep) can contain an unlimited number of notes, CC and FX automations!
+
+\fithalfgraphics{STEP.png}
+
+Press \btn{track}: mute/unmute the tracks with the 16 pads. Change the track BANK (A/B/C/D) with \btn{<} and \btn{>}. Set up the length, time signature, zoom and MIDI channel of the current track. Build the current sequence.
+
+\fithalfgraphics{TRACK.png}
+
+Press \btn{seq}: launch your sequences (a set of the 64 muted/unmuted tracks) on the fly or program a chain of sequences to create a complete structured song.
+
+\fithalfgraphics{SEQ-PLAY.png}
+
+
+\section{Screen}
+
+In each of the 4 modes, some data is always displayed:
+
+\fitgraphics{General_screen.png}
+
+\textcolor{pygreen}{Mode} can be one of the 4 modes: \btn{live} \btn{step} \btn{track} \btn{seq}
+
+\textcolor{pygreen}{Project name} is the name you gave to your song before saving it.
+
+\textcolor{pygreen}{MIDI in} flashes if a MIDI message is received, \textcolor{pygreen}{MIDI out A}, \textcolor{pygreen}{MIDI out B} and \textcolor{pygreen}{USB out} flashes if a MIDI message is sent.
+
+\textcolor{pygreen}{Tempo} displays the BPM of your project.
+
+\textcolor{pyred}{Current track} is the track number that you are editing in Live and Step Modes, and its bank. \textcolor{pyred}{Track out} indicates on which output your sequenced musical instrument is plugged in (MIDI A, MIDI B, USB, CV) and which channel you configured. Multiple outputs can be selected.
+
+\textcolor{pyred}{Current sequence} shows the sequence playing (and so the group of tracks you are editing in TRACK mode). Can also displays the next sequence to be played in the chain.
+
+\textcolor{pyblue}{Mode zone} spotlights the main parameters of each mode, which can be generally edited via the clickable data encoder \encodericon{}.
+
+\textcolor{pyblue}{Player zone} displays the track player (a representation of the current track, considering the zoom, the track length, the player position and the page you are viewing) in Live, Step and Track modes:
+
+\fitgraphics{player_zone.jpg}
+
+In the example above, you are viewing the first page (the 4 first bars of a 12 bars + 1/4 bars length track = 12 bars + 1 beat length). The player is playing the twelfth bar.
+
+In Seq Mode the \textcolor{pyblue}{Player zone} gives the set sequence chain:
+
+\fitgraphics{sequence_zone_5.png}
+
+In the example above, 6 sequences are chained and the SE06 (highlighted) will play during 2 bars.

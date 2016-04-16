@@ -1,0 +1,273 @@
+\chapter{Basics}
+
+\section{How to select the current track}
+
+A project can include up to 64 tracks:
+
+\begin{itemize}
+\item 16 tracks in the bank A
+\item 16 tracks in the bank B
+\item 16 tracks in the bank C
+\item 16 tracks in the bank D
+\end{itemize}
+
+Regardless the mode you are using, hold \btni{track} and select the track of the current BANK you want to work on with one of the 16 pads \padsicon{} (for example TR03A).
+
+To change the current track BANK (A/B/C/D), hold \btni{track} and press \btn{<} or \btn{>}.
+
+\fitgraphics{tracks_banks.png}
+
+The current track number and its output channel is displayed on the screen:
+
+\fitgraphics{Track-number.png}
+
+You can quickly change the output channel of the selected track by pressing \btn{track} + \btncolor{pyyellow}{midi channel}. The great thing is that you can create multiple tracks with the same MIDI channel, so they can be activated (unmuted) together or separately.
+
+Note: as soon as you edit a note or a CC message (in \btn{live} or \btn{step} mode), the track is created and you can mute/unmute it.
+
+
+\section{How to capture a performance}
+
+To record a live performance on the current track, press \btn{rec} in \btn{live} mode.
+
+You can play with the built-in keyboard \keypadicon{} and smartpads \smartpadsicon{} to record notes. Use the 5 assignables encoders \encodersicon{} and the assignable touchpad \touchpadicon{} to record CC and FX automations.
+
+You can also use any kind of MIDI controllers to record notes and automations. It's even possible to record CV events thanks to the CV/gate input!
+
+The number of notes polyphony is unlimited, as well as the number of CC automations per tracks. By default, there is no quantize, so it's great for capturing the ``human feel'' of your performance.
+
+Enter \btn{step} mode and press \btn{DISP} to view the piano roll and see the recorded notes:
+
+\fitgraphics{STEP_DISPLAY.jpg}
+
+Of course, it's possible to add, remove, edit notes in a flash in \btn{step} mode with the step-by-step sequencer.
+
+
+\section{How to use the step-by-step sequencer}
+
+Enter \btn{step} mode. The default stepmode is \textbf{NOTE}: that means that you can add, remove, edit \textbf{notes} on the current track:
+
+\begin{itemize}
+\item to select the note (e.g. C4), rotate \encodericon{}
+\item to add a note, press one of the 16 steps \padsicon{}
+\item to remove a note, press again this step \padsicon{}
+\item you can also hold one of the 16 steps, and rotate \encodericon{} to set the note.
+\end{itemize}
+
+Pyramid is fully polyphonic, so you can add as many notes as you want on one step. You can set the \btncolor{pygreen}{velocity}, the \btncolor{pygreen}{width} and the \btncolor{pygreen}{offset} of a note. You can \btncolor{pyyellow}{zoom} to set the resolution of steps (by default 1 step = a quarter note, but you can zoom up to 1 step = a 1/64 note). Finally, you can set the \btncolor{pyyellow}{length} and the \btncolor{pyyellow}{time signature} of the track, so you can work on very short or very long patterns!
+
+Press \btn{DISP} to view the piano roll and see the track notes:
+
+\fitgraphics{step_poly.png}
+
+Change the stepmode by holding \btn{step} and rotating \encodericon{}. Changing the stepmode basically changes the step-by-step mode. In brief, there is 5 stepmodes:
+
+\begin{itemize}
+\item \textbf{NOTE} (add, delete, edit notes)
+\item \textbf{CHORD} (add, delete, edit chords)
+\item \textbf{EUCLID} (generate algorithmic patterns)
+\item \textbf{CC MESSAGES} (add, delete, edit CC automations)
+\item \textbf{EFFECTS} (add, delete, edit FX automations)
+\end{itemize}
+
+Each of the 5 stepmodes can work together, except \textbf{EUCLID}. That means that on a single track, you can add notes, chords, CC automations or FX automations. Of course, you can also create tracks that include only notes or CC automations.
+
+
+\section{How to mute/unmute tracks}
+
+Enter \btn{track} mode. Press \btn{<} \btn{>} to select the track bank.
+
+Use the 16 pads \padsicon{} to mute/unmute created tracks, from TR01A to TR16D.
+
+You can play together up to 64 tracks! Muting/unmuting tracks is a great and intuitive way to perform your song on the fly.
+
+Press \btn{DISP} to display your tracks progressions:
+
+\fitgraphics{display_tracks_unmuted.png}
+
+Note: mute/unmute changes are in sync, depending on the \textbf{PERFORM} type selected in \btn{seq} mode.
+
+
+\section{How to select the current sequence}
+
+The current sequence number is displayed on the screen:
+
+\fitgraphics{SCREEN_SE.png}
+
+Regardless the mode you are using, hold \btni{seq} and select the sequence you want to work on with one of the 16 pads \padsicon{}. If you select an empty sequence, the track mute states of the last sequence will be applied to this new sequence.
+
+\note{Selecting a sequence can only be done with SEQ PERFORM enabled. This action is not available with SEQ PLAY or SEQ LOOP enabled, because the sequencer will play the defined sequence chain (and therefore the selected sequence = the played sequence).}
+
+Holding \btni{seq} and select the sequence will play the new selected sequence without waiting for the end of the currently playing sequence (instant jump). If you want to launch a new sequence after the end of the current sequence measure, enter the \btn{seq} mode and press one of the 16 pads \padsicon{} (without holding \btn{seq}).
+
+
+\section{How to create and edit sequences}
+
+In \btn{track} mode, hold \btni{seq} and select the sequence you want to create or edit with one of the 16 pads \padsicon{}.
+
+The current sequence number is displayed on the screen:
+
+\fitgraphics{SCREEN_SE.png}
+
+Then mute/unmute your active tracks to build the sequence. As soon as you made a mute state change, the sequence is created.
+
+
+\section{How to play with sequences}
+
+Once you created several sequences, enter \btn{seq} mode to play with it. Make sure \textbf{PERFORM} is selected, in order the perform sequences on the fly, always in sync:
+
+Press any sequence number \padsicon{} to launch it. Pyramid waits until the current sequence ends (the end of the bar, if ``1 BAR'' selected) and then it launches the new sequence right away. The new sequence is now playing in a loop, until you press another sequence number.
+
+You can select the delay Pyramid will wait before switching to the next sequence: instant, 1 beat, 1 bar, 2 bars, \ldots{} so you can deeply play with sequences!
+
+
+\section{Tempo}
+
+Tap \btn{BPM} to set up the tempo, or hold \btn{BPM} and turn the data knob \encodericon{}.
+
+To change the BPM decimal, turn \encodericon{} while pressing it. The tempo resolution ranges from 10.0 BPM to 999.9 BPM.
+
+\tip{Hold \blackbtn{2ND} + \btn{BPM} and turn the data knob \encodericon{} to change the tempo, which will apply only when you release \blackbtn{2ND}.}
+
+\note{If you link an instrument providing a sync signal on the MIDI input, by default Pyramid automatically synchronizes the BPM to this external BPM source.}
+
+
+\section{Undo}
+
+In every mode, press \blackbtn{2ND} + \blackbtn{undo} to cancel the last edition, for example notes or automations recorded in Live mode. Another press on \btn{undo} will redo this last edition.
+
+Last editions are stated by the following actions:
+
+\begin{itemize}
+\item a REC ON in Live mode,
+\item a PLAY ON,
+\item a stepmode change,
+\item a new track selection,
+\item a step copy,
+\item a track delete.
+\end{itemize}
+
+That means that the undo will refresh the current track as it was at the time of the last action.
+
+
+\section{Save and load a project}
+In every mode, press \blackbtn{2ND} + \blackbtn{save/load} to access the menu and save, save as, load or create a new project.
+
+\fitgraphics{saveload.png}
+
+To enter the save/load manager, make sure a SD card is inserted.
+
+
+\section{Effect manager}
+
+You can add up to 4 effects per track. Press \btn{FX} and place a real time effect in the chain using \encodericon{}, for example a \textbf{quantizer humanizer}, \textbf{harmonizer}, \textbf{randomizer}, \textbf{swing} or \textbf{arpeggiator}:
+
+\fitgraphics{Effects.jpg}
+
+It is then possible to edit the effect with the 5 encoders \encodersicon{} and find your favorite setting:
+
+\fitgraphics{Effects_arp_edit.jpg}
+
+\tip{With the effect manager activated, you can still play or add notes in \btn{live} and \btn{step} mode, mute/unmute tracks in \btn{track} mode, and even launch sequences in \btn{seq} mode.}
+
+Once you edited an effect, feel free to add other effects and change their positions in the chain (in the manager with \blackbtn{2ND} + \encodericon{}) to go further in experimentation.
+
+\tip{The effect manager is also a great tool if you are a keyboardist and you want to revive your old synths. Give them new features, like arps and effects and they'll sound like they never did. You can also add deep control in your modular system in \& out, and make it truly unique.}
+
+\note{The effect engine also works when the player is stopped, as Pyramid clock always runs.}
+
+
+\section{Assign a control}
+
+Pyramid includes 5 clickable encoders and a touchpad. You can assign these controls by holding \btn{ASSIGN} and turning an encoder, sliding the touchpad or tilt Pyramid back/front.
+
+At this point, you have two options:
+
+\begin{itemize}
+\item Link this control to a \textbf{CC MIDI message} of the current track channel (for example the pitch or a CC message)
+\item Link this control to the \textbf{effect parameter} of a track (for example the quantization grid, the swing \% or the arpeggiator rate of the track 02)
+\end{itemize}
+
+\fitgraphics{ASSIGN.jpg}
+
+\tip{Press an encoder to display its assignment and its value (for example TR02A Swing Grid = 1/16).}
+
+Once the assignment is implemented, you can play in real time with all the controls in any mode.
+
+\fitgraphics{ASSIGN-SWING.png}
+
+Press \btn{rec} in \btn{live} Mode and record automations on the current track:
+
+\begin{itemize}
+\item If the control is assigned to a \textbf{CC message}, you can record the automation on the track only if the MIDI out and the MIDI channel of the CC is the same as the current track out settings (for example MIDI A channel 04).
+\item If the control is assigned to an \textbf{effect parameter}, you can record the automation on the track only if this effect belongs to the current track.
+\end{itemize}
+
+\note{Assignations are saved with the project and are independant of the current track and the current sequence. Selecting a new track or a new sequence will not unlink or change the assign.}
+
+
+\section{Display features}
+
+Some modes include extra data that you can access by pressing \btn{DISP}. In these displays, the user interface never changes, it's another graphic representation.
+
+For example, in \btn{step} mode, pressing \btn{DISP} will lead to the piano roll editor:
+
+\fitgraphics{STEP_DISPLAY.jpg}
+
+\note{An example of a track, programmed with notes of different lengths. You are viewing the page 1 of 4 pages. The current note is C4, the current velocity is 127, the current note length is 4 steps and the current offset is 0\%. If you press a step to add a note, the note will be added with these parameters.}
+
+
+\section{Quick track settings}
+
+This is one of the most helpful action, we seriously advise you to try it!
+
+To change the current track settings, in any mode, hold \btni{track} to use the shortcuts:
+
+\begin{itemize}
+\item \btncolor{pyyellow}{solo}
+\item \btncolor{pyyellow}{midi channel}
+\item \btncolor{pyyellow}{zoom}
+\item \btncolor{pyyellow}{length}
+\item \btncolor{pyyellow}{time signature}
+\end{itemize}
+
+For example, when you are in \btn{step} mode, hold \btn{track} + \btncolor{pyyellow}{zoom} to change the edition resolution (from 25\% to 1600\%) with \encodericon{}, in a flash.
+
+
+\section{Play/Pause/Stop}
+
+Press \playicon{} to play/pause the sequencer.
+
+This pad flashes (depending on the BPM and the current track time signature) if the project is played, and is softly backlit if the project is paused.
+
+Press \stopicon{} to stop the sequencer. Pressing once stops the player at the current track page if you work on multiple pages (see Step Mode section), while pressing twice rewinds it to the beginning of the track.
+
+\note{Two presses on STOP will send an All Note Off MIDI message to your instruments, a third press will send an All Sound Off MIDI message in order to off the synths release instantly. Moreover, the third STOP press also send Program Change messages of active tracks, if set.}
+
+\note{By default, the MIDI clock on MIDI A out, MIDI B out and USB out, as well as the play/stop/continue messages, are disable. You can activate them separately in the SETTINGS menu.}
+
+
+\section{Metronome}
+
+Hold \blackbtn{2ND} and press \btn{rec} to activate the metronome:
+
+\fitgraphics{metronome.png}
+
+\note{The metronome is made with MIDI notes. The metronome will click on the selected output channel and selected note, and will follow the beat. You can configure it in SETTINGS > MISC.}
+
+
+\section{Settings menu}
+
+Press \blackbtn{2ND} + \btn{FX} to enter General Settings.
+
+\fitgraphics{SETTINGS.png}
+
+Select a category to configure your project:
+
+\begin{itemize}
+\item \textbf{MIDI IN} (MIDI input configuration)
+\item \textbf{MIDI OUT} (MIDI outputs configuration)
+\item \textbf{MISC} (other project and core options)
+\item \textbf{CV/PEDAL} (CV/Gate inputs+outputs analog configuration, pedal control assignment)
+\end{itemize}
+

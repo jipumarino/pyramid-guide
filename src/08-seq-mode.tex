@@ -1,0 +1,205 @@
+\chapter{Seq Mode}
+
+After creating your tracks in Live and Step Mode, and assembling them into several sequences in Track Mode, you are now able to play with the sequences.
+
+The Seq Mode is the second way to perform your song. Instead of muting/unmuting tracks like you do in Track Mode, Pyramid offers an advanced system to play with sequences:
+
+\fitgraphics{SEQ_PERFORM.png}
+
+PERFORM: launch your sequences on the fly. You can select the delay Pyramid will wait until playing the next sequence (Instant, 1 Beat, 1 Bar, 2 Bar, ... 8 Bar). It's a great creative tool to improvise your song with a total freedom, but always in sync!
+
+PLAY: play once the sequence arrangement (chain) you programmed with the project song zone.
+
+LOOP: loop the sequence arrangement (chain) you programmed with the project song zone.
+
+\note{When your sequences are playing, remember that you can still enter the TRACK mode to change the mute states of the current sequence playing, and enter the LIVE mode or STEP mode to play, rec or program notes and automations on the current track.}
+
+
+\section{Screen}
+
+\fitgraphics{SEQMODE.png}
+
+Seq mode screen displays the 4/4 beat progression in sync with the BPM (4 beats = 1 bar):
+
+\fitgraphics{progression_bar_seq.png}
+
+Below, the full sequence length progression is displayed. For example, if the current sequence contains a 3 bars track and a 4 bars track, the sequence is 12 bars length (number of bars after which tracks all restarts at the same time again). This progression zone will be 100% filled after 12 bars.
+
+\note{Note: On all 4 modes, Pyramid displays the current sequence and the next sequence to be played if there is one:}
+
+\fitgraphics{SCREEN_SE_FOLLOW.png}
+
+
+\section{Pads}
+
+\fitgraphics{SEQ_PADS.png}
+
+
+\section{How to create and edit sequences}
+
+In \btn{track} mode, hold \btni{seq} and select the sequence you want to create or edit with one of the 16 pads \padsicon{}.
+
+The current sequence number is displayed on the screen:
+
+\fitgraphics{SCREEN_SE.png}
+
+Then mute/unmute your active tracks to build the sequence. As soon as you made a mute state change, the sequence is created.
+
+When selecting an empty sequence, Pyramid will copy the previous mute states, so you can perform your live set whithout blanks!
+
+\note{Selecting a sequence can only be done with SEQ PERFORM enable. This action is non available with SEQ PLAY or SEQ LOOP enable, because the sequencer will play the defined sequence chain (and therefore the selected sequence = the played sequence).}
+
+
+\section{``PERFORM'' project}
+
+\fitgraphics{SEQ_PERFORM.png}
+
+This mode allows you to build a song from sequences in a free and creative way, always in sync.
+
+At startup, \textbf{PERFORM} is activated and the sequence \textbf{SE01} is playing in a loop.
+
+Press any sequence number \padsicon{} to launch it on the fly. Pyramid waits until the current sequence ends (the end of the bar, if ``1 BAR'' selected) and then it launches the new sequence right away. The new sequence is now playing in a loop, until you press another sequence number.
+
+\fitgraphics{Sequences_chain.png}
+
+In the example above, Pyramid plays the SE01, where only the TR01 is unmuted. Then the user presses SE03 \padsicon{} and this sequence starts as soon as the SE01 ends. The TR02, TR03, TR04 and TR05 play together, until the user presses another sequence.
+
+\subsection{PERFORM delay selection}
+
+You can select the delay Pyramid will wait before switching to the next sequence.
+
+\fithalfgraphics{delay_inst.png}
+\fithalfgraphics{delay_1beat.png}
+\fithalfgraphics{delay_1bar.png}
+\fithalfgraphics{delay_4bar.png}
+
+INST: The next sequence will be launched instantly, without delay.
+
+BEAT: The next sequence will be launched at the next beat of the current sequence.
+
+1 BAR: The next sequence will be launched at the next bar of the current sequence.
+
+2 BAR \ldots 8 BAR: The next sequence will be launched at the modulo (2, 3, 4, 5, 6, 7 or 8 bar) of the current sequence.
+
+
+\section{``PLAY'' project}
+
+This mode allows you to program a set of sequences, in order to get a complete and ready to play song.
+
+Before enabling \textbf{PLAY PROJECT}, you need to design your chain of sequences.
+
+Rotate clockwise \encodericon{} to highlight the first sequence slot:
+
+\fitgraphics{sequence_zone_1.png}
+
+Press \encodericon{} to make your selection and rotate \encodericon{} to choose the first sequence to be in the chain, for example \textbf{SE03}:
+
+\fitgraphics{sequence_zone_2.png}
+
+Press \encodericon{} to validate and rotate \encodericon{} to choose the number of bars this sequence has to be played with:
+
+\fitgraphics{sequence_zone_3.png}
+
+\note{For your information, the screen indicates the full length of the sequence. It's the number of bars after which all tracks are perfectly sync again, if using different track length. For example a sequence with a 3 bars length and a 4 length had a full length of 12 bars.}
+
+Press \encodericon{} to validate:
+
+\fitgraphics{sequence_zone_4.png}
+
+Repeat this one-handed operation to create an infinite sequence chain of your choice:
+
+\fitgraphics{sequence_zone_5.png}
+
+Select the \textbf{PLAY PROJECT} Submode:
+
+\fitgraphics{SEQ_PLAY.png}
+
+The player stops and stands ready to play the programmed sequence chain. Press play \playicon{} to launch your sound project. Once the song is finished, the player stops and waits for another play.
+
+\note{Once the chain is programmed, you can change the number and the length of a sequence, and even move it and delete it.}
+
+
+\section{``LOOP'' project}
+
+It's exacly the same mode as the ``PLAY'' project, except that the sequence arrangement loops, in order to create an infinite song.
+
+\fitgraphics{SEQ-LOOP.png}
+
+
+\section{Note about track lengths concurrence \& sequences}
+
+When you switch from one sequence to another, the great thing is that a track keeps playing from its last position only if this track was active in the last sequence. We call it the FREE run mode (enabled by default).
+
+In the example below, you can see 4 tracks:
+
+\fitgraphics{Track_concurrence.png}
+
+Now if you play these tracks organized in sequences:
+
+\fitgraphics{Sequence_concurrence.png}
+
+\textbf{TR01} is unmuted in all sequences: it is fully played.
+
+\textbf{TR02} is muted in \textbf{SE02}: it replays from the start in \textbf{SE03}.
+
+\textbf{TR03} is 6-bar length: it replays from the start in the middle of \textbf{SE03}.
+
+\textbf{TR04} is only 1-bar length: it loops in \textbf{SE04}.
+
+
+\section{Track run modes:\\FREE, RELATCH \& TRIG}
+
+By default the track concurrence is in FREE run mode. Each track can also be configured in RELATCH or TRIG run modes:
+
+RELATCH (\inlineicon{icon_RELATCH.png} icon displayed under TR): when a new sequence starts, the track always restarts at its beginning. It's an easy way to sync your track.
+
+TRIG (\inlineicon{icon_TRIG.png} icon displayed under TR): track is playing once at the beginning of the sequence, and does not loop. The track is simply triggered and stopped when it reaches its end.
+
+To change the track run mode, enter \btn{track} mode, hold \btn{track} and rotate \encodericon{}:
+
+\fithalfgraphics{RELATCH.png}
+\fithalfgraphics{TRIG.png}
+
+\note{TR01A configured as a RELATCH track, and as a TRIG track.}
+
+
+\section{RELATCH run mode}
+
+Each of these 4 tracks are configured in RELATCH run mode:
+
+\fitgraphics{Track_concurrence.png}
+
+Now if you play these tracks organized in sequences:
+
+\fitgraphics{Sequence_concurrence_relatch.png}
+
+If the RELATCH track is active in the sequence, the track will always start from its beggining, even if the track is not finished yet. In other words, at each new sequence beggining, the track restarts.
+
+
+\subsection{TRIG run mode}
+
+Each of these 4 tracks are configured in TRIG run mode:
+
+\fitgraphics{Track_concurrence.png}
+
+Now if you play these tracks organized in sequences:
+
+\fitgraphics{Sequence_concurrence_trig.png}
+
+If the TRIG track is active in the sequence, the track will play once whitout looping. If the track is active in the next sequence, it will continue to play like in FREE run mode.
+
+
+\subsection{FREE, RELATCH \& TRIG mixed}
+
+A great way to add complexity to your song is to use different run modes for each tracks. Performing sequences just goes one step beyond!
+
+\fitgraphics{Sequence_concurrence_trig_relatch.png}
+
+
+\section{Copy/Paste/Delete a sequence}
+
+Press \blackbtn{2ND} + \blackbtn{copy} + a sequence \padsicon{} to copy it.
+
+Press \blackbtn{2ND} + \blackbtn{paste} + a sequence \padsicon{} to paste it.
+
+Press \blackbtn{2ND} + \blackbtn{delete} + a sequence \padsicon{} to delete it.

@@ -1,0 +1,77 @@
+\chapter{Save/Load}
+
+\section{Save/load principles}
+
+To save or load a project, make sure a SD card is inserted, hold \blackbtn{2ND} and press  save/load  to enter the menu:
+
+
+
+A project is a whole set of 64 tracks (notes + effects racks + CC messages automations + effect parameters automations), 16 sequences, sequences chain, assignations and settings. Saving or loading a new project will stop the project playback.
+
+Please not remove the SD card while save/load menu is activated. To exit the save/load menu, press \blackbtn{2ND} +  save/load .
+
+
+To exit the Save/load menu, press  save/load  or \blackbtn{2ND}.
+Save
+
+Select SAVE with  to save the project on the SD card with the current project name. If no project name was defined (NEW PROJECT), SAVE will redirect you to SAVE AS.
+
+Saving an existing project creates a backup file in the SD card, for example “BACKUP_PROJECT1”, to always keep an old version of your project. This backup is not displayed on the LOAD project list. If you want to load it, rename the file, for example ``PYRA_PROJECT1''.
+
+Save As
+
+Select SAVE AS with  to save the project with a new name. Then edit the project name with this edition display:
+
+
+
+Select ``<'' to delete the last character.
+Select ``SAVE'' to validate.
+
+ TIP  Hold \blackbtn{2ND} and rotate  to move the cursor vertically in the edition display.
+
+Load
+
+Select LOAD with  to load a new project on the SD card. This action will delete the current project: you have to save your project before loading an other one.
+
+Select the project to load in the dropdown list with :
+
+
+Press  to validate.
+
+New
+
+Select NEW to delete everything in the project and restart from scratch.
+
+Project files
+
+Projects directories are always saved on the SD card with the prefix ``PYRA_'', on the SD root directory.
+
+You can read the project files on your computer browser:
+
+The core.pyr file contains the project settings, the sequences data, assignations and effects racks.
+
+The other files can be deleted:
+
+- The track 01A contains midi notes (track01.mid), midi CC automations (CC_track01.mid) and effects parameters automations (FX_track01.pyr).
+
+- The track 09A contains only midi CC automations (CC_track09.mid).
+
+- The track 10A contains only effects parameters automations (FX_track10.pyr).
+
+- The track 01B contains only midi notes (track17.mid).
+
+- The track 16D contains only midi notes (track64.mid).
+
+Import and export files
+
+It's easy to import and export midi files (notes and CC automations) because Pyramid store these files as standard *.mid data (type 0 midi file: single track). All popular DAWs can play and edit MIDI files.
+
+You can import or export from short patterns up to long linear tracks. For example, you can drag-and-drop a *.mid file from the SD card project directory to your favourite software sequencer (e.g. Ableton) and play \& edit this pattern on the DAW:
+
+
+
+You can also create a midi track from scratch on your DAW and export it to an existing SD card project directory, with a valid name. If you want to export the *.mid file (filled with notes) to the Pyramid TR08A, name the file track08.mid (track 01 + bank A = 0*16). For TR01B, name the file track17.mid (track 01 + bank B = 1*16). For TR16D, name the file track64.mid (track 16 + bank D = 3*16).
+
+Pyramid will play this *.mid note pattern in a loop, depending on the track length.
+
+Same operations for a CC messages automation track. If you want to export the *.mid file (filled with CC automations, pitch bend and/or channel pressure) to the Pyramid TR08A, name the file CC_track08.mid and export it in an existing directory.

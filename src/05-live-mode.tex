@@ -1,0 +1,133 @@
+\chapter{Live Mode}
+
+The Live Mode is the first way to create tracks from scratch.
+
+In your studio, use the Live mode to experiment and record your music thanks to the built-in keypad, knobs, touchpad and smartpads (that can be configured as chords harmonizer, advanced beat repeat or scaled piano).
+
+On stage, play with Pyramid and make your performance alive and creative. Real-time effects allow you to easily generate complex music, always in sync.
+
+
+\section{Screen}
+
+\fitgraphics{LIVE.png}
+
+\note{Note: the track player zone is described in the Step Mode section.}
+
+
+\section{Pads}
+
+Pads in Live Mode are divided into two parts: the one-octave keypad and the 8 smartpads.
+
+\fitgraphics{LIVE_PADS.png}
+
+
+\section{Play with the keypad}
+
+Use the keypad \keypadicon{} to play your live performance. Press \btn{<} or \btn{>} to change the octave.
+
+You can also use external MIDI controllers (for example piano-style keyboard, drumpads, fader surface) connected to the MIDI input to control the current track of Pyramid (control notes with velocity + aftertouch + pitch, or control CC messages). If you disable the OMNI-mode, channel 01 controllers will control track 01A, channel 12 controllers will control track 12A, \ldots)
+
+If you added MIDI effects to the current track, they will be processed during your live play.
+
+
+\section{Record your performance}
+
+Press \btn{rec} to record your live performance on the current track using the keypads, smartpads or an external MIDI controller.
+
+You can also record FX and MIDI automations using the assignable encoders \encodersicon{}, the touchpad \touchpadicon{} and the analog inputs. See the Assign section to learn how to assign a control.
+
+\tip{When the player is stopped \stopicon{} and you press \btn{rec}, Pyramid is waiting for a press on play \playicon{}. Once you press \playicon{} a countdown is launched before the recording starts - and remains until the end of the track loop.}
+
+
+\section{Change smartpads type}
+
+Hold \btn{live} and rotate the data knob \encodericon{} to change the type of the 8 smartpads \smartpadsicon{}:
+
+\begin{itemize}
+\item \textbf{CHORD} (default)
+\item \textbf{SCALE}
+\item \textbf{REPEAT}
+\end{itemize}
+
+\fitthirdgraphics{Live_chord.png}
+\fitthirdgraphics{live_scale_full.png}
+\fitthirdgraphics{live_repeat_full.png}
+
+
+\section{Chord smartpads}
+
+The Chord Smartpads represent the 7 degrees of the harmonized scale. These harmonized scales are the basis on which almost every song you know is built.
+
+In Pyramid, we are using two parameters to build chords: the tonality will be the first note of your harmonized scale and the complexity represents the number of notes in each chord and chord inversions.
+
+If we choose a CMaj tonality and 4 notes of complexity, we will obtain on the smartpads: 
+
+\fitgraphics{LIVE_CHORDS.png}
+
+Pyramid's original harmonizer algorithm allows you to smartly jump to a relative neighbour tonality by rotating \encodericon{}, unleashing your creativity.
+
+\blackbtn{2ND} + rotating \encodericon{} will jump to the very next major/minor tonality. Add complexity by pressing and rotating \encodericon{}:
+
+\fitgraphics{LIVE_CHORD_MACRO.png}
+
+As with the keypad, Press \btn{<} or \btn{>} to change the chords octave.
+
+\tip{Increasing the complexity will add «alterations» and eventually bring you to complex jazzy chords.}
+
+\tip{Set a low complexity value to perform simple chords and then add the alterations you want with the keypads.}
+
+Press \btn{DISP} to display the generated chords for the 8 smartpads, and the currently played notes:
+
+\fitgraphics{Live_chord_Display.png}
+
+
+\section{Scale smartpads}
+
+A scale is an ordered set of musical notes, based on a root note. Predifined scales helps you to easily compose melodic patterns.
+
+Pyramid includes a varied set of scales: Minor scale, Harmonic minor, Minor blues, Major blues, Romanian minor, Tunis scale, Dominant 7th, Spanish scale, Gipsy scale, Arabian scale, Egyptian scale, Hawaiian scale, Japanese scale, Minor third, Fourth scale, Fifth scale, Octave scale, Ionian scale, Dorian scale, Phrygian mode, Lydian mode, Mixolydian mode, Aeolian mode, Locrian mode.
+
+Rotate \encodericon{} to select the scale in the list:
+
+\fitgraphics{LIVE_SCALE_MACRO.png}
+
+Hold \blackbtn{2ND} and rotate \encodericon{} to select the root note of the scale.
+
+For instance with the Romanian Minor scale, and the root note C, you can perform the following notes using the smartpads:
+
+\fitgraphics{LIVE_SCALE.png}
+
+As with the keypad, Press \btn{<} or \btn{>} to change the scale octave.
+
+
+\section{Repeat smartpads}
+
+Hold a smartpad \smartpadsicon{} to choose the repeat speed (for example 1/8 = 8 notes per bars) and use the keypad \keypadicon{} to play a note repeatedly.
+
+\fitgraphics{LIVE_REPEAT.png}
+
+Rotate \encodericon{} to select the gate of note repeat (from 0\% to 100\%):
+
+\fitgraphics{LIVE_REPEAT_MACRO.png}
+
+Press \btn{DISP} to display the repeat speed for the 8 smartpads:
+
+\fitgraphics{Live_Repeat_Display.png}
+
+
+\section{Hold}
+
+Hold \blackbtn{2ND} and press \playicon{} to activate the \textbf{HOLD} function. It allows you to hold pressed notes with the keypad or smartpads. Held notes are highlighted on the keypad.
+
+\tip{It's very usefull to design drones/synth pads or experiment with an effect like the arpeggiator.}
+
+When HOLD is enabled, \holdicon{} is displayed on the screen.
+
+
+\section{Relatch}
+
+Hold \blackbtn{2ND} and press again \playicon{} to activate the \textbf{RELATCH} function, allowing you to hold the last keys or chords played, until you play something else.
+
+When RELATCH is enabled, the logo \relatchicon{} is displayed on the screen.
+
+Hold \blackbtn{2ND} and press a third time \playicon{} to go back in the regular Live Mode.

@@ -1,0 +1,176 @@
+\chapter{Effect Manager}
+
+\section{Effect manager principles}
+
+You can add up to 4 real-time MIDI effects per track, from TR01A to TR16D. A real-time effect means that the notes (played or recorded in \btn{live} mode, or programmed in \btn{step} mode) are processed and sent to the outputs instantly by the effects engines. All the effects are non-destructive.
+
+The position of an effect in the chain is very important: an Harmonizer placed after an Arpeggiator will not sound like an Arpeggiator placed after an Harmonizer. You can play with that to experiment and generate eccentric melodies. It's also possible to add multiple effects of the same engine on the same track (e.g. chaining two arpeggiators).
+
+\fitgraphics{pyramid_effect_manager.png}
+
+With the effect manager activated, you can still play notes and smartpads in \btn{live} mode, even if Pyramid is stopped or paused, very handy to try the parameters. You can also add notes in \btn{step} mode, mute/unmute tracks in \btn{track} mode, launch sequences in \btn{seq} mode.
+
+Effects compute notes according to the track time signature, so if you change the time signature from 4/4 to 4/8, it will be twice as fast.
+
+At last, all the effect parameters can be assigned to edit them in real time, even if you are not in the FX manager. You can even automate parameters in REC mode or in step-by-step (parameter locks).
+
+
+\section{How to add effects to a track}
+
+Press \btn{FX} to display the Effect manager of the current track:
+
+\fitgraphics{effect_manager_empty.png}
+
+To place an effect in the chain, select one of the 4 racks and press \encodericon{}:
+
+\fitgraphics{effect_manager_list.png}
+
+Select from the list an effect an press \encodericon{} to add it, for example an arpeggiator. It is then possible to edit the effect with the 5 encoders \encodersicon{}  and find your favorite setting:
+
+\fitgraphics{Effects_arp_edit.jpg}
+
+\tip{In \btn{live} mode, when you are editing an effect with the 5 encoders \encodersicon{}, press \btn{rec} to record directly the effect parameters automations.}
+
+Press again \encodericon{} to go back to the FX manager. Repeat this operation to fill up to 4 racks:
+
+\fitgraphics{effect_manager_full.png}
+
+\note{The Quantizer must be added to the first position. if you try to add the Quantizer on another rack, the effect manager will automatically move the Quantizer to the first position.}
+
+A disable effect is grey tinted (in the screen below, the SWING and the HARMONIZER are disable):
+
+\fitgraphics{FX-MANAGER.png}
+
+To exit the effect manager, press \btn{FX}.
+
+
+\section{Other tools}
+
+Selecting an added effect with \encodericon{} allows you to edit, delete or replace the effect:
+
+\fitgraphics{effect_manager_press_fx.png}
+
+Rotating \encodericon{} while pressing \blackbtn{2ND} allows you to change the position of the selected effect. The Quantizer can't be moved.
+
+\tip{Selecting another track with \btn{track} + \padsicon{} does not exit the FX manager, useful to check if effects are added in the other tracks.}
+
+
+\section{Effect list}
+
+\subsection{Quantizer / humanizer}
+
+Eliminates or adds imprecision to your performance or step note edition.
+
+\fitgraphics{effect_quantizer.png}
+
+\blackbtn{ENABLE} \btn{ON} \btn{OFF}
+
+Activate/disable the quantizer / humanizer engine.
+
+\blackbtn{GRID} \btn{1/4} \btn{1/6} \btn{1/8} \btn{1/12} \btn{1/16} \btn{1/24} \btn{1/32}
+
+Amount of quantization. A grid of 1/4 bar will move notes (forward or backwards) to the nearest beat.
+
+\blackbtn{HUMAN-} \btn{0} \btn{\ldots} \btn{10}
+
+Amount of humanization advance. Moves notes backwards (millisecond level) randomly, to mimic the ``organic'' human playing.
+
+\blackbtn{HUMAN+} \btn{0} \btn{\ldots} \btn{10}
+
+Amount of humanization delay. Moves notes forward (millisecond level) randomly, to mimic the ``organic'' human playing.
+
+\subsection{Arpeggiator}
+
+Turns notes and chords into running patterns.
+
+\fitgraphics{effect_arp.png}
+
+\blackbtn{ENABLE} \btn{ON} \btn{OFF}
+
+Activate/disable the arpeggiator engine.
+
+\blackbtn{STYLE} \btn{UP} \btn{DOWN} \btn{UP/DOWN} \btn{RANDOM} \btn{ASSIGN}
+
+Direction of the arpeggiated pattern. For example UP will play the pattern from the lowest note to hightest. RANDOM will aleatory play notes. ASSIGN will play notes in the order they were played.
+
+\blackbtn{GATE} \btn{1\%} \btn{\ldots} \btn{200\%}
+
+Pattern note lengths, depends on the rate.
+
+\blackbtn{RATE} \btn{1/4} \btn{\ldots} \btn{1/64}
+
+Speed of the pattern. A rate of 1/4 will play a note of the arppegio every beat.
+
+\blackbtn{OCTAVE} \btn{-5} \btn{\ldots} \btn{+5}
+
+To create octaves progression. If OCTAVE=1 the arpeggiator will play the original pattern, followed by the same pattern one octave higher. If OCTAVE=-2 the arpeggiator will play the original pattern, followed by the same pattern one octave lower, followed by the same pattern two octaves lower.
+
+\subsection{Harmonizer}
+
+Turns notes into chords.
+
+\fitgraphics{effect_harmonizer.png}
+
+\blackbtn{ENABLE} \btn{ON} \btn{OFF}
+
+Activate/disable the harmonizer engine.
+
+\blackbtn{HARMO1} \btn{-24} \btn{\ldots} \btn{+24}
+
+Add an extra note simultaneously with the inputted note, according to the selected interval (harmonic). If HARMO1=12, a note will be generated one octave higher. If HARMO1=NO, no note will be added.
+
+\blackbtn{HARMO2} \btn{-24} \btn{\ldots} \btn{+24}
+
+Add a second extra note.
+
+\blackbtn{HARMO3} \btn{-24} \btn{\ldots} \btn{+24}
+
+Add a third extra note.
+
+\blackbtn{HARMO4} \btn{-24} \btn{\ldots} \btn{+24}
+
+Add a fourth extra note.
+
+\subsection{Swing}
+
+Swing notes to create groove rhythms and easily go ``off the grid''.
+
+\fitgraphics{effect_swing.png}
+
+\blackbtn{ENABLE} \btn{ON} \btn{OFF}
+
+Activate/disable the swing engine.
+
+\blackbtn{PERCENT} \btn{50\%} \btn{\ldots} \btn{99\%}
+
+Percentage of swing (delay the position of every second point in the quantization grid). 50\% (default) has no effect on notes position.
+
+\blackbtn{GRID} \btn{1/1} \btn{\ldots} \btn{1/64}
+
+Swing quantization grid, to define positions of second points. Most common grids are 1/8 and 1/16.
+
+\blackbtn{VELOCITY} \btn{0\%} \btn{\ldots} \btn{100\%}
+
+Amount of swing accent. 50\% (default) has no effect on notes volume. Decrease this parameter to accentuate the first swung note. Increase it to accentuate the second swung note.
+
+\subsection{Randomizer}
+
+Randomly changes notes parameters (velocity, pitch or length).
+
+\fitgraphics{effect_randomizer.png}
+
+\blackbtn{ENABLE} \btn{ON} \btn{OFF}
+
+Activate/disable the randomizer engine.
+
+\blackbtn{PARAM} \btn{VELOCITY} \btn{PITCH} \btn{NOTE} \btn{LENGTH}
+
+Note parameter to be randomized.
+
+\blackbtn{RANDOM-} \btn{0} \btn{\ldots} \btn{127}
+
+Negative amount of randomization. 0\% (default) has no effect on notes. 100\% set the maximum range of negative randomization.
+
+\blackbtn{RANDOM+} \btn{0} \btn{\ldots} \btn{127}
+
+Positive amount of randomization. 0\% (default) has no effect on notes. 100\% set the maximum range of positive randomization..

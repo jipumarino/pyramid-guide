@@ -1,0 +1,292 @@
+\chapter{Track Mode}
+
+The Track Mode has three purposes:
+
+\begin{enumerate}
+\item to configure the current track (MIDI channel, zoom, length, time signature) using the shortcuts, before playing in Live Mode or programming in Step Mode.
+\item to mute/unmute the 64 tracks using the 16 pads and \btn{<} \btn{>}. This touch and intuitive command allows you to perform your song on the fly.
+\item to build your current sequence (a set of the 64 muted/unmuted tracks).
+\end{enumerate}
+
+
+\section{Screen}
+
+\fitgraphics{TRACK-1.png}
+
+This display shows that the TR01A is selected (current track) and countains notes, effects, CC automations and FX automations, with a 200\% zoom and a 4/4 signature.
+
+The sequence SE01 groups 6 unmuted tracks of the bank A: TR01A, TR02A, TR05A, TR08A, TR12A and TR15A. The other tracks are muted or empty.
+
+
+\section{Pads}
+
+\fitgraphics{TRACK_PADS.png}
+
+
+\section{Mute/unmute tracks on the fly}
+
+Press one of the 16 pads \padsicon{} to mute or unmute a track of the current BANK. Change the current BANK (A/B/C/D) with \btn{<} and \btn{>}.
+
+An empty track (without notes, effects or automations) can't be muted.
+
+When the sequencer is playing, tracks are evolving in parallel even if they are muted: it helps you to perform with them.
+
+In the example below, 3 tracks are unmuted, 2 tracks are muted and all the tracks have the same length:
+
+\fitgraphics{TRACK_PLAYER_1.png}
+
+If the tracks have different lengths, they are still played simultaneously but the shorter ones will repeat before the others:
+
+\fitgraphics{TRACK_PLAYER_2.png}
+
+\tip{Use different track lengths (for example 2 bars, 4 bars and 6 bars) to create a non-repetitive, evolving sequence.}
+
+\subsection{Mute/unmute in sync}
+
+Mute/unmute changes are in sync, depending on the \textbf{PERFORM} type selected in \btn{seq} mode:
+
+\fithalfgraphics{delay_inst.png}
+\fithalfgraphics{delay_1beat.png}
+\fithalfgraphics{delay_1bar.png}
+\fithalfgraphics{delay_4bar.png}
+
+For example, if you unmute the track 01, this track will be activated at the beginning of the next bar (if \textbf{PERFORM} = \textbf{1BAR} in \btn{seq} mode), allowing you to play with tracks mute states in perfect sync.
+
+To mute/unmute tracks instantly, select \textbf{PERFORM} = \textbf{INST} in \btn{seq} mode.
+
+\tip{You can also press \blackbtn{2ND} + a track \padsicon{} to mute/unmute it instantly.}
+
+
+\section{Mute/unmute tracks to create sequences}
+
+A sequence is a set of 64 tracks, muted or unmuted. To build your current sequence, mute and unmute tracks using the 16 pads \padsicon{} and \btn{<} \btn{>}.
+
+For example in \textbf{SE01}, only TR02A is unmuted. In \textbf{SE02}, TR02A and TR11A are unmuted. In \textbf{SE03}, TR01A, TR06A and TR15A are unmuted:
+
+\fitgraphics{tracks_vs_sequences.png}
+
+Once you have created your sequences, jump in Seq Mode to launch them or program a chain of sequences to create a complete structured song.
+
+\subsection{Save mute states OFF}
+
+By default, track mute states changes are saved in the current sequence (\btn{rec} is lit). If you mute or unmute a track, the sequence will save the mute states.
+
+\fitgraphics{save_mute_states.png}
+
+Press \btn{rec} in order to don't save the sequence mute states (\textbf{REC} led will be OFF). If you mute or unmute a track, the sequence will not save the mute states. Very handy to play with tracks in TRACK mode, without losing your sequences track states. If you change the sequence, the current sequence track states will be restored as their ``default'' states.
+
+
+\section{Solo a track}
+
+Hold \btncolor{pyyellow}{solo} and select a track with the pads \padsicon{} to solo a track.
+
+To cancel solo, press any track \padsicon{}.
+
+
+\section{MIDI Channel}
+
+Pyramid includes two MIDI outputs, one USB MIDI output and one CV/Gate (analog) output.
+
+Each MIDI output contains 16 channels, which means that you can control up to 16 electronic musical instruments per MIDI output.
+
+Hold \btncolor{pyyellow}{midi channel} and rotate \encodericon{} to select the MIDI output of the track.
+
+\tip{Hold \btncolor{pyyellow}{midi channel} and press + rotate \encodericon{} to select the MIDI output of the track.}
+
+A message pops up, displaying the selected output type (\textbf{MIDI A}, \textbf{MIDI B}, \textbf{USB}, \textbf{CV}) and channel number:
+
+\fitgraphics{MIDI_CHANNEL1.png}
+
+\tip{You can link the track to two different outputs, for example both MIDI A and MIDI B or CV/Gate and USB.}
+
+\fitgraphics{MIDI_CHANNEL2.png}
+
+The output channel is always displayed under the track number:
+
+\fitgraphics{Track-number.png}
+
+\note{MIDI B CHANNEL 01 + USB OUT CHANNEL 01 is set}
+
+\note{Note: the DIN sync output interface (also called SYNC24) is available on the MIDI B plug. You can enable and configure it using the Settings menu.}
+
+
+\section{Zoom}
+
+Hold \btncolor{pyyellow}{zoom} and rotate \encodericon{} to set the resolution, from 25\% to 1600\%:
+
+\fitgraphics{zoom100.png}
+
+A 100\% zoom means that 1 step = 1 quarternote.
+
+A 200\% zoom doubles the resolution: a quarternote is divided into 2 steps. With a 1600\% zoom, a quarternote is divided into 16 steps, useful to surgically edit your track.
+
+A 50\% zoom decrease the resolution, useful if you want to have a global view of your track: two quarternotes become one step.
+
+\note{Note: please read the Step Mode section ``Track player: pages, zoom and length'' for further details about the zoom feature.}
+
+
+\section{Length}
+
+Hold \btncolor{pyyellow}{length} and rotate \encodericon{} to set the bar level:
+
+\fithalfgraphics{bar44.png}
+\fithalfgraphics{bar64.png}
+
+\note{A length of 4 bars, a length of 64 bars.}
+
+Hold \btncolor{pyyellow}{length} and press + rotate \encodericon{} to set the bar level with step precision:
+
+\fithalfgraphics{bar214.png}
+\fithalfgraphics{bar014.png}
+
+\note{A length of 2 bars + 1 quarternote, a length of 0 bar + 1 quarternote (1/4 bar = 1 quarternote).}
+
+\tip{Bear in mind that you can, in every mode, hold \btn{track} to activate the following shortcuts:}
+
+\begin{itemize}
+\item \btncolor{pyyellow}{solo}
+\item \btncolor{pyyellow}{midi channel}
+\item \btncolor{pyyellow}{zoom}
+\item \btncolor{pyyellow}{length}
+\item \btncolor{pyyellow}{time signature}
+\end{itemize}
+
+
+\section{Copy/Paste/Delete a track}
+
+Press \blackbtn{2ND} + \blackbtn{copy} + a track \padsicon{} to copy it.
+
+Press \blackbtn{2ND} + \blackbtn{paste} + a track \padsicon{} to paste it.
+
+\tip{Copy/paste is very useful to create another pattern from an existing track. Copy saves track settings + notes + automations + effects.}
+
+Press \blackbtn{2ND} + \blackbtn{delete} + a track \padsicon{} to delete it.
+
+
+\section{Time signature and polyrhythm}
+
+The \textbf{4/4} standard time signature often sounds good, but sequencing with other time signatures is an easy way to add complexity and originality to your songs.
+
+\fitgraphics{Time_Signature.png}
+
+Hold \btncolor{pyyellow}{time signature} and rotate \encodericon{} to change the time signature's upper number on the current track.
+
+The length of a bar is the same whether you set a common \textbf{4/4} signature or you choose an odd one such as \textbf{15/4}. For example, at \textbf{120 bpm}, a bar in \textbf{4/4}, \textbf{3/4} or \textbf{15/4} will last 2 seconds, and will loop at the same time:
+
+\fitgraphics{POLYR1.png}
+
+The difference is the length of each quarternote. If you increase the time signature's upper number, it will increase the number of quarternote in one bar: \textbf{4/4} means \textbf{4} quarternotes in a bar, \textbf{15/4} means \textbf{15} quarternotes in a bar.
+
+\fithalfgraphics{signature74.png}
+\fithalfgraphics{signature74-bar.png}
+
+\note{By default, when you change the upper number, the track length automatically change in order to keep the same number of quarternotes. For example, if you work on a \textbf{4/4} track with 4 bars length, there is 16 quarternotes. If you set the upper number to \textbf{7/4}, the track length will be set to 2+2/7 = 16 quarternotes. You can change the track length to work on a ``classic'' \textbf{7/4}, 4 bars length (28 quarternotes), or any other track lengths.}
+
+With Pyramid you can mix a \textbf{4/4} track with a \textbf{5/4} track, a \textbf{9/4} and a \textbf{15/4} track: this is polyrhythm! Tracks with different time signatures are synchronized and will loop at the same time, but steps follow their own path. The measure size is the same, but the beat differs. Of course you may still use all functionalities such as track length, zoom, offset, quantizer and arpeggiator, as the PyraOs core system is based on Polyrhythm.
+
+By default the time signature's \textbf{lower number} is set on \textbf{4}, which means ``quarter note''. It can also be set on \textbf{2} ``half note'', \textbf{8} ``eighth note'' or \textbf{16} ``sixteenth note'' by holding time signature and pressing + rotating \encodericon{}:
+
+\fitgraphics{signature78.png}
+
+It would multiply or divide the basic \textbf{/4} bar length by \textbf{2}:
+
+\fitgraphics{POLYR2.png}
+
+The same idea applies to other time signatures:
+
+\fitgraphics{POLYR3.png}
+
+\tip{To create a \textbf{Microstep} track, set the track length on \textbf{0+1/4} bar, the zoom on \textbf{1600\%} and increase the time signature lower number up to \textbf{4/16}. The step-by-step player will run at high speed, which is very useful to create drones, black MIDI and glitch sounds, and to expand the boundaries of your instruments.}
+
+
+\section{Track length fraction and polymetry}
+
+Let's say we are set on \textbf{4/4} with a Track length of \textbf{1} bar. Each step represents a quarternote.
+
+Hold \btncolor{pyyellow}{length} and press + rotate \encodericon{} to add or remove one quarternote (one step) to the length of the selected Track. This leads to the following possibilities:
+
+\fitgraphics{POLYR4.png}
+
+\begin{itemize}
+\item The 1st track is a standard \textbf{4/4} bar
+\item The 2nd track is a \textbf{4/4} bar with \textbf{1} removed quarternote
+\item The 3rd track is a \textbf{4/4} bar with \textbf{1} added quarternote
+\end{itemize}
+
+It changes the length of your loops so they will shift against each other: this is polymetry! The bar size differs, but the beat remains the same.
+
+Using polymetric patterns is a good trick to create lively, ever-changing and lengthy sequences. In the following example, the sequence composed of 3 short tracks will get back to its starting point after 15 loops of the standard \textbf{4/4} track:
+
+\fitgraphics{POLYR7.png}
+
+\tip{Link these 3 tracks to the same MIDI channel (ie to a unique musical instrument) to create a progressive pattern.}
+
+
+\section{Irrational rhythms}
+
+An irrational rhythm uses step durations that lie outside the scope of the \textbf{4/4} system and loop on a different bar length.
+
+Create a polyrhythmic (tracks with different time signatures) and polymetric (tracks with different bar lengths) sequence to experiment irrational rhythms! Both the measure size and the beat differ.
+
+In the example below you get a simple overview of all these concepts for 3 simple tracks:
+
+\fitgraphics{POLYR6.png}
+
+This sequence will get back to its starting point after 6 loops of the \textbf{4/4} track. Within the sequence, track quarternotes are never on time because of the beat phase shift.
+
+
+\section{DISP track view}
+
+Press \btn{DISP} to display your tracks progressions and easily understand your track polymeters:
+
+\fitgraphics{display_tracks_unmuted.png}
+
+This screen displays:
+
+\begin{itemize}
+\item Track number: from 1 to 16
+\item Track progression: percentage of the loop being played
+\item Track bar length
+\item Track time signature
+\item Run modes: \textbf{RELATCH} \inlineicon{icon_RELATCH.png}, \textbf{TRIG} \inlineicon{icon_TRIG.png} or \textbf{FREE} (nothing displayed)
+\item Output: flashes if the track is sending events via MIDI, USB or CV/GATE.
+\end{itemize}
+
+Muted tracks are shaded:
+
+\fitgraphics{display_tracks_muted.png}
+
+The \btn{DISP} view displays tracks from TR01 to TR08 of the selected bank. If you press \btn{DISP} again, it will display TR09 to TR16 tracks. You can also use the menu encoder to select the displayed tracks.
+
+With \btn{DISP} activated, the 16 pads flashes when tracks send MIDI events (notes and CC messages).
+
+
+\section{About polyrhythms (advanced users)}
+
+Almost all types of polyrhythms can be handle by Pyramid. Some user wonder how can we achieve this if we can only set multiple of 2 in its right side (x/2, x/4, x/8...).
+
+First of all, a 7/4 bar has the exact same length as a 4/4 bar. In a 7/4 bar, there is 7 quarternotes which are shorter than the ones in 4/4 bar. The lower number basically indicates the note length. 4/8 represents a bar of 4 eighth notes (the bar length is divided by two). 4/2 leads to 4 half notes (the bar length is multiplied by two).
+
+At the very beginning we implemented the representation using classical irrational time signatures (4/6, 3/3, 11/15...) but this is really hard to use. Imagine you start in 4/4, western common time signature. If you change the upper number to 3/4: you have 3 “quarternotes” in the same bar length. Change the lower number to 3: the time signature is now 3/3. It's exactly the same as the 3/4 but you changed the meaning of your writing: if the lower number is not a multiple of 2: it's an irrational notation, which means that we have 3 notes with a quarter note length same as the length of the quarter note in a 3/4 bar.
+
+Irrational writing leads to:
+
+\begin{itemize}
+\item 4/5 means 4 quarter notes of 5/4.
+\item 8/12 means 8 quarter notes of 12/4.
+\item 13/9 means 13 quarter notes of 9/4.
+\end{itemize}
+
+Quickly we understood that it's not a good idea to mix several notations and we arrived to the conclusion that all we need is a simple notation of time signatures and an extensive use of steps. So the lower number can only be 1, 2, 4, 8, 16, and the upper number is limited to 24. The length resolution of a track is not limited to a bar length but to a step length. For example, if you are in 5/4 you can set the track length to 1 bar + 3 steps. Which is identical to 5 quarter notes of 5/4 + 3 quarter notes of 5/4 which leads to 8/5.
+
+Irrational time signatures mixed with step concept (zoom 100\%):
+
+\begin{itemize}
+\item 4/5 = 4 steps of 5/4.
+\item 8/12 = 0 bar + 8 steps of 12/4
+\item 13/9 = 1 bar + 4 steps of 9/4
+\end{itemize}
+
+We took care of bringing polyrhythms to people who don't master the mechanisms, while not restrain possibilities. To use polyrhythms you only have to choose the number of quarter notes you want in a bar by changing the upper numeral value, and then choose the number of steps you want for your track length.
+
+\tip{You can fake phasing (compositional technique invented by Steve Reich and Terry Riley) by putting against each other close, high polyrhythms. They will slide slightly while playing.}

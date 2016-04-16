@@ -1,0 +1,149 @@
+% \documentclass[letterpaper,10pt,openany]{book}
+\documentclass[letterpaper,10pt,openright,twoside]{book}
+\usepackage[english]{babel} % hyphens
+\usepackage{multicol}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage[all]{nowidow}
+% \usepackage{showframe}
+\usepackage[margin=1.5cm]{geometry}
+% \usepackage[tmargin=1in,bmargin=1in,lmargin=1.25in,rmargin=1.25in]{geometry}
+\usepackage[pagestyles]{titlesec}
+\usepackage{enumitem}
+\usepackage[export]{adjustbox}
+\usepackage{titling}
+\usepackage{emptypage}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{color}
+\usepackage{soul}
+\usepackage{xstring}
+
+\definecolor{pyblue}{HTML}{179ED9}
+\definecolor{pyred}{HTML}{EC656B}
+\definecolor{pyyellow}{HTML}{F4EE7C}
+\definecolor{pygreen}{HTML}{6EC198}
+\definecolor{pygray}{HTML}{CCCCCC}
+\definecolor{tipblue}{HTML}{99CCFF}
+
+
+\newcommand{\inlineicon}[1]{\includegraphics[height=\fontcharht\font`\B]{figs/#1}}
+\newcommand{\tracklenicon}{\inlineicon{page_bar_number.png}}
+\newcommand{\pageposicon}{\inlineicon{page_selected.png}}
+\newcommand{\playerposicon}{\inlineicon{page_player.png}}
+\newcommand{\baricon}{\inlineicon{page_non_selected.png}}
+\newcommand{\playicon}{\inlineicon{play.png}}
+\newcommand{\relatchicon}{\inlineicon{Live_relatch.png}}
+\newcommand{\holdicon}{\inlineicon{Live_hold.png}}
+\newcommand{\stopicon}{\inlineicon{stop.png}}
+\newcommand{\padsicon}{\inlineicon{stepbystep.png}}
+\newcommand{\padsselectionicon}{\inlineicon{stepbystep_selection.png}}
+\newcommand{\keypadicon}{\inlineicon{keypad.png}}
+\newcommand{\smartpadsicon}{\includegraphics{figs/smartpads.png}}
+\newcommand{\encodersicon}{\includegraphics{figs/encoders.png}}
+\newcommand{\touchpadicon}{\inlineicon{touchpad.png}}
+\newcommand{\encodericon}{\inlineicon{encoder.pdf}}
+\newcommand{\btncolor}[2]{\tcbox[top=0pt,bottom=0pt,left=1pt,right=1pt,arc=0.5pt,boxsep=0pt,colframe=#1,colback=#1,nobeforeafter,tcbox raise base]{#2}}
+\newcommand{\btn}[1]{\IfStrEqCase{#1}{{step}{\btncolor{pygreen}{STEP}}{live}{\btncolor{pyred}{LIVE}}{seq}{\btncolor{pyblue}{SEQ}}{track}{\btncolor{pyyellow}{TRACK}}{rec}{rec~\includegraphics[height=\fontcharht\font`\B]{figs/rec.pdf}}}[\btncolor{pygray}{#1}]}
+\newcommand{\btni}[1]{\btn{#1}}
+
+\newcommand{\note}[1]{\textit{#1}}
+
+\newcommand{\tip}[1]{\btncolor{tipblue}{\textcolor{white}{TIP}} #1}
+\newcommand{\blackbtn}[1]{\btncolor{black}{\textcolor{white}{#1}}}
+
+%% TODOS
+% - be consistent with usage of buttons icons, guide uses them sometimes only
+% - quotation marks
+% - rest of the chapters
+% - turn some pictures to svg/pdf?
+% - comments/documentation in config section
+% - note in smaller font
+% - notes are sometimes captions really
+% - "tip" in smaller font
+% - \ldots instead of … and ...
+% - hanging indent in chapter title (see Connectivity Examples)
+% - change fit*graphics to fitgraphics with optional argument
+% - fit half and third should group contigous images (see p.19)
+% - consolidate *icon *btn commands
+% - consider changing textbf to a more descriptive macro like \pymode{}
+% - some way to remove empty arguments {}
+% - # --> ♯
+% - quotes in headings (see p.40)
+% - spacing before settings specs (p.45)
+% - case of \btn{\ldots}
+% - remove/restyle subsection in TOC (note case of \\ in heading)
+
+\newcommand{\fitgraphics}[1]{\begin{figure}[H]\centering\includegraphics[max width=\columnwidth]{figs/#1}\end{figure}}
+
+\newcommand{\fithalfgraphics}[1]{\begin{figure}[H]\centering\includegraphics[max width=0.5\columnwidth]{figs/#1}\end{figure}}
+
+\newcommand{\fitthirdgraphics}[1]{\begin{figure}[H]\centering\includegraphics[max width=0.333333\columnwidth]{figs/#1}\end{figure}}
+
+\setlist[itemize]{nosep,leftmargin=1em}
+% \setlist{noitemsep}
+\setlength\parindent{0pt}
+\setlength{\columnsep}{1.25cm}
+\setlength{\parskip}{0.5em} % consider zero
+\setmainfont{Helvetica}
+\newfontfamily\headingfont{Futura}
+
+\titlespacing{\chapter}{0pt}{0pt}{1.5em}
+\titleformat{\chapter}[block]
+  {\fontsize{25}{25}\headingfont\raggedright}
+  {\thechapter}
+  {0.5em}
+  {}
+
+\titlespacing{\section}{0pt}{1.5em}{0.5em}
+\titleformat{\section}[hang]
+  {\fontsize{14}{14}\headingfont\raggedright}
+  {\thesection}
+  {0.5em}
+  {}
+
+\titlespacing{\subsection}{0pt}{1.5em}{0.5em}
+\titleformat{\subsection}[hang]
+  {\fontsize{10}{10}\headingfont\raggedright\slshape}
+  {\thesubsection}
+  {0.5em}
+  {\uppercase}
+
+\makeatletter
+\renewcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi
+\thispagestyle{chapterstyle}
+                    \global\@topnum\z@
+                    \@afterindentfalse
+                    \secdef\@chapter\@schapter}
+% \renewcommand\tableofcontents{
+% \if@twocolumn \@restonecoltrue \onecolumn \else \@restonecolfalse \fi \chapter *{\contentsname \@mkboth {\MakeUppercase \contentsname }{\MakeUppercase \contentsname }}\@starttoc {toc}\if@restonecol \twocolumn \fi}
+\makeatother
+
+\makeatletter
+\def\tableofcontents{\chapter*{Contents}\@starttoc{toc}}
+\makeatother
+
+\setcounter{secnumdepth}{0}
+
+\pretitle{
+  \begin{center}
+  \includegraphics{figs/squarplogo.png}\\
+  \fontsize{30}{30}\headingfont
+}
+\posttitle{\end{center}}
+\preauthor{\begin{center}\fontsize{18}{18}\headingfont}
+\postauthor{\end{center}}
+\predate{}
+\postdate{}
+
+\title{Pyramid Sequencer\\User Guide}
+\author{Squarp Instruments}
+\date{}
+
+\newpagestyle{contentstyle}{
+  \setfoot[\thepage\hspace{1em}|\hspace{1em}\chaptertitle][][]{}{}{\chaptertitle\hspace{1em}|\hspace{1em}\thepage}
+}
+\newpagestyle{chapterstyle}{
+  \setfoot[\thepage][][]{}{}{\thepage}
+}

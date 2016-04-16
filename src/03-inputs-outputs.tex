@@ -1,0 +1,73 @@
+\chapter{Inputs/Outputs}
+
+\section{MIDI connectivity}
+
+\subsection{MIDI input}
+
+\fitgraphics{logo_midiin.png}
+
+Connect one or more MIDI controller (e.g. keyboard, drumpads, fader surface) and control Pyramid with MIDI notes and MIDI CC messages. You can choose in the SETTINGS between \textbf{OMNI-mode} (control the selected track, regardless of controller output channel) and \textbf{MULTI-mode} (control TR01A if controller channel = 01, control TR14A with controller channel 14). Allows you to record multi-channel events as a MIDI looper.
+
+Synchronize Pyramid's clock (tempo) with an external machine, and even controls play, pause and start actions.
+
+\subsection{MIDI outputs}
+
+\fitgraphics{logo_midiout.png}
+
+Pyramid embeds two MIDI outputs (A and B), to connect and control a large range of electronic instruments (synthesizers, drum machines, effects, \ldots). Because each MIDI output includes 16 MIDI channels, you can control up to 32 instruments.
+
+
+\section{USB connectivity}
+
+\subsection{USB MIDI input}
+
+\fitgraphics{logo_midiusb.png}
+
+Plug an USB cable on your computer and Pyramid will receive MIDI notes, CC messages, pitch, aftertouch, transport messages and the clock. It works exaclty like the MIDI input.
+
+\subsection{USB MIDI output}
+
+\fitgraphics{logo_midiusb.png}
+
+Pyramid can also control and sequence up to 16 virtual instruments (VST) on your computer, and sync your DAW in sync.
+
+
+\section{CV/Gate connectivity}
+
+\subsection{CV/Gate inputs}
+
+\fitgraphics{cvgatein.png}
+
+There are two CV/Gate inputs on Pyramid. You can use them to convert the CV/Gate notes to MIDI notes, then add real-time MIDI effects in your CV/Gate performance, and finally send these notes to MIDI OUT or CV/Gate OUT or USB OUT.
+
+To use these inputs, plug the pitch output of your instrument to the CV input jack 3.5mm and plug the gate output of your instrument to the Gate input jack 3.5mm. Your external instrument will control MIDI notes of the current Pyramid track.
+
+You can also use the CV inputs as a voltage controlled MIDI CC MESSAGES. For example, the CV voltage=5V can be converted to a CC MESSAGE value=127. Then Pyramid can send the CC Message via MIDI OUT, or you can choose to control an internal MIDI effect (e.g. control TRACK04 arpeggiator rate with CV input \#1, and control the TRACK11 quantize grid with the CV input \#2).
+
+This is why we added 2 CV/Gate, it's built to control Pyramid for those who like to experiment.
+
+\subsection{CV/Gate outputs}
+
+\fitgraphics{cvgateout.png}
+
+Pyramid has only one CV/Gate output, because we wanted to keep the machine compact. In addition, we added another voltage output ``ENV'' (which is actually another CV), very useful to sequence a filter or anything voltage-controlled on your modular.
+
+
+\section{DIN Sync connectivity}
+
+\fitgraphics{dinsync.png}
+
+Pyramid embeds a DIN sync output (configurable to Sync48, Sync24, Sync12, \ldots in menu SETTINGS) that lets you synchronise your vintage instruments with a tempo clock and a run/stop message.
+
+The DIN sync output is available on the MIDI out B connector, routed as following:
+
+\fitgraphics{din_sync_routing.png}
+
+In SETTINGS, you can also decide to configure the mini-jack CV ENV as a DIN Sync output, to outputs an analog clock for your modular.
+
+
+\section{Pedal foot-switch}
+
+\fitgraphics{pedalin.png}
+
+You can plug a foot-switch type pedal and assign it to an internal control (REC, play/pause or play/stop). You can also use a double pedal (stereo jack) to control 2 actions in Pyramid.
