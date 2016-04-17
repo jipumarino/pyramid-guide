@@ -49,6 +49,10 @@
 \newcommand{\btn}[1]{\IfStrEqCase{#1}{{STEP}{\btncolor{pygreen}{STEP}}{LIVE}{\btncolor{pyred}{LIVE}}{SEQ}{\btncolor{pyblue}{SEQ}}{TRACK}{\btncolor{pyyellow}{TRACK}}{rec}{rec~\includegraphics[height=\fontcharht\font`\B]{figs/rec.pdf}}}[\btngray{#1}]}
 \newcommand{\btni}[1]{\btn{#1}}
 
+
+\newcommand{\settingname}[1]{\blackbtn{#1}\\}
+\newcommand{\settingopt}[1]{\btngray{#1}}
+
 \newcommand{\note}[1]{\textit{#1}}
 
 \newcommand{\tip}[1]{\tcbox[top=0pt,bottom=0pt,left=1pt,right=1pt,arc=0.5pt,boxsep=0pt,colframe=tipblue,colback=tipblue,nobeforeafter,tcbox raise=0pt]{\textcolor{white}{\scriptsize TIP}} #1}
