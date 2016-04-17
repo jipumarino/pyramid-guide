@@ -1,151 +1,203 @@
 \chapter{Settings}
 
-Settings menu
+\section{Settings menu}
 
-Press  2ND  + FX to enter General Settings. 
+Press \blackbtn{2ND} + \btn{FX} to enter General Settings.
 
-
+\fitgraphics{SETTINGS.png}
 
 Then select the settings folder. You can also select the disk icon, in order to:
-● Save currently set settings in flash memory. Settings options will be auto-loaded at Pyramid startup. 
-● Save track channels current mapping in flash memory. The 64 track channels will be auto-loaded at Pyramid startup. 
-● Restore default settings. 
-● Restore default track channels.
 
-To exit the settings menu, press FX or  2ND .
+\begin{itemize}
+\item Save currently set settings in flash memory. Settings options will be auto-loaded at Pyramid startup.
+\item Save track channels current mapping in flash memory. The 64 track channels will be auto-loaded at Pyramid startup.
+\item Restore default settings.
+\item Restore default track channels.
+\end{itemize}
 
-Midi in
+\note{To exit the settings menu, press \btn{FX} or \blackbtn{2ND}.}
 
- PYRAMIDI   CHANNEL 1   ...   CHANNEL 16   OFF 
-Select the input channel to control Pyramid with PYRAMiDi messages (see the midi implementation chart). For example, if CH13 is selected, you can send channel 13 midi CC messages (with an external controller) to Pyramid, to mute/unmute the 64 tracks on the fly, select a track, activate REC, launch a sequence...
 
- ASSIGN NOTE TO   KEYPAD   SMARTPADS   OFF 
+\section{MIDI in}
+
+\blackbtn{PYRAMIDI} \btn{CHANNEL 1} \btn{\ldots} \btn{CHANNEL 16} \btn{OFF}
+
+Select the input channel to control Pyramid with PYRAMiDi messages (see the MIDI implementation chart). For example, if CH13 is selected, you can send channel 13 MIDI CC messages (with an external controller) to Pyramid, to mute/unmute the 64 tracks on the fly, select a track, activate REC, launch a sequence\ldots
+
+\blackbtn{ASSIGN NOTE TO} \btn{KEYPAD} \btn{SMARTPADS} \btn{OFF}
+
 Selects if received notes are performed as notes, smartpads (e.g. CHORDS) or ignored.
 
- OMNI MODE   OFF   ON 
-OMNI mode ON will play notes and CC on the current track, regardless of the controller channel. OMNI mode OFF will play CH01 notes and CC on TR01A, CH02 notes and CC on TR02A, .... CH16 notes and CC on TR16A. 
+\blackbtn{OMNI MODE} \btn{OFF} \btn{ON}
 
- IGNORE SYNC   OFF   ON 
+OMNI mode ON will play notes and CC on the current track, regardless of the controller channel. OMNI mode OFF will play CH01 notes and CC on TR01A, CH02 notes and CC on TR02A, \ldots CH16 notes and CC on TR16A.
+
+\blackbtn{IGNORE SYNC} \btn{OFF} \btn{ON}
+
 Enables or disables the BPM auto-sync, if your MIDI IN controller is sending a timing clock.
 
- IGNORE CC MESSAGES   OFF   ON 
+\blackbtn{IGNORE CC MESSAGES} \btn{OFF} \btn{ON}
+
 Filters all CC messages of your controller.
 
- IGNORE START STOP   OFF   ON 
+\blackbtn{IGNORE START STOP} \btn{OFF} \btn{ON}
+
 Filters all START, STOP and CONTINUE messages of your MIDI IN controller.
 
- IGNORE PITCH   OFF   ON 
+\blackbtn{IGNORE PITCH} \btn{OFF} \btn{ON}
+
 Filters all PITCH BEND messages of your MIDI IN controller.
 
- IGNORE AFTERTOUCH   OFF   ON  
+\blackbtn{IGNORE AFTERTOUCH} \btn{OFF} \btn{ON}
+
 Filters all AFTERTOUCH (channel pressure) messages of your MIDI IN controller.
 
-Midi out
 
- MIDI A MODE   MIDI OUT   MIDI THRU   MIDI OUT + THRU 
-Configures Pyramid midi out A as a midi out (default), as a midi thru (all messages received on the midi input will be sent directly on the midi out A), as a midi out + thru (all messages received on the midi input will be sent directly on the midi out A, together with Pyramid midi messages). 
+\section{MIDI out}
 
- MIDI B MODE   MIDI OUT   MIDI THRU   MIDI OUT + THRU 
-Configures Pyramid midi out B as a midi out (default), as a midi thru (all messages received on the midi input will be sent directly on the midi out B), as a midi out + thru (all messages received on the midi input will be sent directly on the midi out B, together with Pyramid midi messages). 
+\blackbtn{MIDI A MODE} \btn{MIDI OUT} \btn{MIDI THRU} \btn{MIDI OUT + THRU}
 
- SYNC MIDI A   OFF   SEND 
-Sends the BPM timing clock on midi out A.
+Configures Pyramid MIDI out A as a MIDI out (default), as a MIDI thru (all messages received on the MIDI input will be sent directly on the MIDI out A), as a MIDI out + thru (all messages received on the MIDI input will be sent directly on the MIDI out A, together with Pyramid MIDI messages).
 
- SYNC MIDI B   OFF   SEND 
-Sends the BPM timing clock on midi out B. 
+\blackbtn{MIDI B MODE} \btn{MIDI OUT} \btn{MIDI THRU} \btn{MIDI OUT + THRU}
 
- SYNC USB   OFF   SEND 
-Sends the BPM timing clock on midi USB.
+Configures Pyramid MIDI out B as a MIDI out (default), as a MIDI thru (all messages received on the MIDI input will be sent directly on the MIDI out B), as a MIDI out + thru (all messages received on the MIDI input will be sent directly on the MIDI out B, together with Pyramid MIDI messages).
 
- START/STOP MIDI A   OFF   SEND 
-Sends START, STOP and CONTINUE messages on midi out A.
+\blackbtn{SYNC MIDI A} \btn{OFF} \btn{SEND}
 
- START/STOP MIDI B   OFF   SEND 
-Sends START, STOP and CONTINUE messages on midi out B. 
+Sends the BPM timing clock on MIDI out A.
 
- START/STOP USB   OFF   SEND 
-Sends START, STOP and CONTINUE messages on midi USB.
+\blackbtn{SYNC MIDI B} \btn{OFF} \btn{SEND}
 
-CV/pedal
+Sends the BPM timing clock on MIDI out B.
 
- CV IN 2V NOTE   C1#   ...   F4# 
-Selects the CV INPUT TO MIDI root note. By default, a CV voltage of 2V plays a C2 midi note on the current track. 
+\blackbtn{SYNC USB} \btn{OFF} \btn{SEND}
 
- CV IN TYPE   VOLT/OCTAVE   HERTZ/VOLT 
-Selects if your analog controller generates CV V/oct or CV Hz/V. 
+Sends the BPM timing clock on MIDI USB.
 
- CV OUT 2V NOTE   C1#   ...   F4# 
-Selects the MIDI TO CV OUTPUT root note. By default, a C2 midi note plays a CV voltage of 2V. 
+\blackbtn{START/STOP MIDI A} \btn{OFF} \btn{SEND}
 
- CV OUT TYPE   VOLT/OCTAVE   HERTZ/VOLT 
-Selects if your analog synthesizer is controlled by CV V/oct or CV Hz/V. 
+Sends START, STOP and CONTINUE messages on MIDI out A.
 
- GATE POLARITY   ACTIVE 5V   ACTIVE 0V 
-Selects the active polarity gate of your analog synthesizer. 
+\blackbtn{START/STOP MIDI B} \btn{OFF} \btn{SEND}
 
- ASSIGN ENV OUT TO   VELOCITY   PITCH   AFTERTOUCH   MODULATION   DIN SYNC 
+Sends START, STOP and CONTINUE messages on MIDI out B.
+
+\blackbtn{START/STOP USB} \btn{OFF} \btn{SEND}
+
+Sends START, STOP and CONTINUE messages on MIDI USB.
+
+
+\section{CV/pedal}
+
+\blackbtn{CV IN 2V NOTE} \btn{C1♯} \btn{...} \btn{F4♯}
+
+Selects the CV INPUT TO MIDI root note. By default, a CV voltage of 2V plays a C2 MIDI note on the current track.
+
+\blackbtn{CV IN TYPE} \btn{VOLT/OCTAVE} \btn{HERTZ/VOLT}
+
+Selects if your analog controller generates CV V/oct or CV Hz/V.
+
+\blackbtn{CV OUT 2V NOTE} \btn{C1♯} \btn{...} \btn{F4♯}
+
+Selects the MIDI TO CV OUTPUT root note. By default, a C2 MIDI note plays a CV voltage of 2V.
+
+\blackbtn{CV OUT TYPE} \btn{VOLT/OCTAVE} \btn{HERTZ/VOLT}
+
+Selects if your analog synthesizer is controlled by CV V/oct or CV Hz/V.
+
+\blackbtn{GATE POLARITY} \btn{ACTIVE 5V} \btn{ACTIVE 0V}
+
+Selects the active polarity gate of your analog synthesizer.
+
+\blackbtn{ASSIGN ENV OUT TO} \btn{VELOCITY} \btn{PITCH} \btn{AFTERTOUCH} \btn{MODULATION} \btn{DIN SYNC}
+
 Selects if the CV ENV outputs the note velocity, the pitch, the aftertouch (channel pressure) or the modulation of the CV track. You can also assign the CV ENV output to the din sync clock, to easily sync your modular system with a mini jack.
 
- DIN SYNC   OFF   SYNC1   SYNC2   SYNC4   SYNC8   SYNC12   SYNC16   SYNC24   SYNC48   SYNC96 
+\blackbtn{DIN SYNC} \btn{OFF} \btn{SYNC1} \btn{SYNC2} \btn{SYNC4} \btn{SYNC8} \btn{SYNC12} \btn{SYNC16} \btn{SYNC24} \btn{SYNC48} \btn{SYNC96}
+
 Selects the DIN SYNC clock speed.
 
- SEND DIN SYNC   PLAY ONLY   ALWAYS 
+\blackbtn{SEND DIN SYNC} \btn{PLAY ONLY} \btn{ALWAYS}
+
 The DIN SYNC clock can be sent only when the player is playing, or always (when player is stopped or played).
 
- ASSIGN PEDAL HOT TO   RECORD   PLAY/PAUSE   PLAY/STOP  
-Sets the action that will be triggered by the footswitch pedal. 
+\blackbtn{ASSIGN PEDAL HOT TO} \btn{RECORD} \btn{PLAY/PAUSE} \btn{PLAY/STOP}
 
- ASSIGN PEDAL COLD TO   RECORD   PLAY/PAUSE   PLAY/STOP  
+Sets the action that will be triggered by the footswitch pedal.
+
+\blackbtn{ASSIGN PEDAL COLD TO} \btn{RECORD} \btn{PLAY/PAUSE} \btn{PLAY/STOP}
+
 Sets the action that will be triggered by the footswitch pedal (if double pedal used).
 
-Misc
 
- DOUBLE TAP MODE   VELOCITY   GLIDE 
-In NOTE and CHORD stepmodes, double tap a pad to enter velocity accents or gliding notes. Glides only works with compatible synths: if two notes follow, the first one need to be double tapped to create a glide between these two notes. 
+\section{Misc}
 
- REC COUNTDOWN   OFF   1 BAR   2 BAR   3 BAR   4 BAR 
+\blackbtn{DOUBLE TAP MODE} \btn{VELOCITY} \btn{GLIDE}
+
+In NOTE and CHORD stepmodes, double tap a pad to enter velocity accents or gliding notes. Glides only works with compatible synths: if two notes follow, the first one need to be double tapped to create a glide between these two notes.
+
+\blackbtn{REC COUNTDOWN} \btn{OFF} \btn{1 BAR} \btn{2 BAR} \btn{3 BAR} \btn{4 BAR}
+
 Activates a countdown before a recording in live mode (When the player is stopped and you press REC then PLAY). You can select the duration of the countdown. The countdown will be send on the same metronome output channel and note.
- METRONOME CH   OFF   CURRENT TRACK   MIDI CH01A   ...   USB CH16 
-Select the metronome output channel (made with midi notes). If the metronome is activated (2ND+REC), the metronome will be send on this selected track, and will follow the beat.
 
- METRONOME NOTE   C-1   G9 
+\blackbtn{METRONOME} CH \btn{OFF} \btn{CURRENT TRACK} \btn{MIDI CH01A} \btn{...} \btn{USB CH16}
+
+Select the metronome output channel (made with MIDI notes). If the metronome is activated (2ND+REC), the metronome will be send on this selected track, and will follow the beat.
+
+\blackbtn{METRONOME NOTE} \btn{C-1} \btn{G9}
+
 Select the metronome output note. If the metronome is activated (2ND+REC), the metronome will click on the selected note.
 
- CC ASSIGN   AUTOREC OFF   AUTOREC ON 
-With autorec on, as soon as you assign a CC control and move it to set the value, an automation message is created to store this value (you can display it or remove it in stepmode CC MESSAGES). This message will be sent at the start of the track, so your synthesizer will always have the right set value. 
+\blackbtn{CC ASSIGN} \btn{AUTOREC OFF} \btn{AUTOREC ON}
 
- PLAY/PAUSE PAD   PAUSE/CONTINUE   RESTART 
-If play/pause selected, a press on the PLAY pad will alternately play and pause the playback. If restart selected, a press on the PLAY pad will always restart the current sequence playback from the beginning. It's an other way to play with sequences. 
+With autorec on, as soon as you assign a CC control and move it to set the value, an automation message is created to store this value (you can display it or remove it in stepmode CC MESSAGES). This message will be sent at the start of the track, so your synthesizer will always have the right set value.
 
- DEFAULT TRACK   MODE FREE   MODE RELATCH   MODE TRIG 
-Set the default run mode of new tracks. 
- DEFAULT ZOOM   25\%   50\%   100\%   200\%   400\% 
-Define the default zoom of all tracks at startup.
+\blackbtn{PLAY/PAUSE PAD} \btn{PAUSE/CONTINUE} \btn{RESTART}
 
- DEFAULT LENGTH   1 BAR   ...   64 BAR 
-Define the default length of all tracks at startup.
+If play/pause selected, a press on the PLAY pad will alternately play and pause the playback. If restart selected, a press on the PLAY pad will always restart the current sequence playback from the beginning. It's an other way to play with sequences.
 
- DEFAULT TS L   1/   ...   24/ 
-Define the default time signature left number of all tracks at startup.
+\blackbtn{DEFAULT TRACK} \btn{MODE FREE} \btn{MODE RELATCH} \btn{MODE TRIG}
 
- DEFAULT TS R   /1   ...   /16 
-Define the default time signature right number of all tracks at startup.
-
- DEFAULT PERFORM   INST   BEAT   1 BAR   ...   8 BAR 
 Set the default run mode of new tracks.
 
- POPUP ASSIGN   ON CLICK   ON ROTATION 
-Displays a popup with encoder assignation information on click or on rotation. 
+\blackbtn{DEFAULT ZOOM} \btn{25\%} \btn{50\%} \btn{100\%} \btn{200\%} \btn{400\%}
 
- ENABLE TOUCHPAD   YES   NO 
-Enables or disables the touchpad. 
+Define the default zoom of all tracks at startup.
 
- TOUCHPAD RELATCH   NO RELATCH   0   ...   127 
+\blackbtn{DEFAULT LENGTH} \btn{1 BAR} \btn{\ldots} \btn{64 BAR}
+
+Define the default length of all tracks at startup.
+
+\blackbtn{DEFAULT TS L} \btn{1/} \btn{\ldots} \btn{24/}
+
+Define the default time signature left number of all tracks at startup.
+
+\blackbtn{DEFAULT TS R} \btn{/1} \btn{\ldots} \btn{/16}
+
+Define the default time signature right number of all tracks at startup.
+
+\blackbtn{DEFAULT PERFORM} \btn{INST} \btn{BEAT} \btn{1 BAR} \btn{\ldots} \btn{8 BAR}
+
+Set the default run mode of new tracks.
+
+\blackbtn{POPUP ASSIGN} \btn{ON CLICK} \btn{ON ROTATION}
+
+Displays a popup with encoder assignation information on click or on rotation.
+
+\blackbtn{ENABLE TOUCHPAD} \btn{YES} \btn{NO}
+
+Enables or disables the touchpad.
+
+\blackbtn{TOUCHPAD RELATCH} \btn{NO RELATCH} \btn{0} \btn{\ldots} \btn{127}
+
 If no relatch selected, the touchpad (assigned X or Y position) will keep it's last set value. If a value is selected (for example 0), the touchpad will send back this value when the touchpad is released.
 
- ENABLE ACCELERO   YES   NO 
-Enables or disables the accelerometer (for batch #01 and #02). 
+\blackbtn{ENABLE ACCELERO} \btn{YES} \btn{NO}
 
- ENABLE USB   YES   NO 
+Enables or disables the accelerometer (for batch \#01 and \#02).
+
+\blackbtn{ENABLE USB} \btn{YES} \btn{NO}
+
 Enables or disables the USB output.
 
