@@ -33,10 +33,10 @@
 \newcommand{\pageposicon}{\inlineicon{page_selected.png}}
 \newcommand{\playerposicon}{\inlineicon{page_player.png}}
 \newcommand{\baricon}{\inlineicon{page_non_selected.png}}
-\newcommand{\playicon}{\inlineicon{play.png}}
+\newcommand{\playicon}{\inlineicon{play.pdf}}
 \newcommand{\relatchicon}{\inlineicon{Live_relatch.png}}
 \newcommand{\holdicon}{\inlineicon{Live_hold.png}}
-\newcommand{\stopicon}{\inlineicon{stop.png}}
+\newcommand{\stopicon}{\inlineicon{stop.pdf}}
 \newcommand{\padsicon}{\inlineicon{stepbystep.png}}
 \newcommand{\padsselectionicon}{\inlineicon{stepbystep_selection.png}}
 \newcommand{\keypadicon}{\inlineicon{keypad.png}}
@@ -56,31 +56,33 @@
 
 %% TODOS
 % - be consistent with usage of buttons icons, guide uses them sometimes only
-% - quotation marks
-% - rest of the chapters
 % - turn some pictures to svg/pdf?
 % - comments/documentation in config section
 % - note in smaller font
-% - notes are sometimes captions really
-% - "tip" in smaller font
-% - \ldots instead of … and \ldots
 % - hanging indent in chapter title (see Connectivity Examples)
 % - change fit*graphics to fitgraphics with optional argument
 % - fit half and third should group contigous images (see p.19)
 % - consolidate *icon *btn commands
-% - consider changing textbf to a more descriptive macro like \pymode{}
 % - some way to remove empty arguments {}
 % - # --> ♯ (missing in helvetica)
 % - quotes in headings (see p.40)
 % - spacing before settings specs (p.45)
 % - case of \btn{\ldots}
+% - button midwidth (single numbers) p.32
 % - remove/restyle subsection in TOC (note case of \\ in heading)
+% - button height shouldn't depend on content p27
+% - line 238 in 02-tex
+% - how to fit :
+%  [ ][ ][ ]
+%  [ ][ ]
+% - fitthree and fittwo better solution
 
 \newcommand{\fitgraphics}[1]{\begin{figure}[H]\centering\includegraphics[max width=\columnwidth]{figs/#1}\end{figure}}
 
-\newcommand{\fithalfgraphics}[1]{\begin{figure}[H]\centering\includegraphics[max width=0.5\columnwidth]{figs/#1}\end{figure}}
+\newcommand{\fittwographics}[2]{\includegraphics[max width=0.5\columnwidth]{figs/#1}\includegraphics[max width=0.5\columnwidth]{figs/#2}}
+\newcommand{\fitthreegraphics}[3]{\begin{figure}[H]\includegraphics[max width=0.333333\columnwidth]{figs/#1}\includegraphics[max width=0.333333\columnwidth]{figs/#2}\includegraphics[max width=0.333333\columnwidth]{figs/#3}\end{figure}}
 
-\newcommand{\fitthirdgraphics}[1]{\begin{figure}[H]\centering\includegraphics[max width=0.333333\columnwidth]{figs/#1}\end{figure}}
+\newcommand{\fithalfgraphics}[1]{\begin{figure}[H]\centering\includegraphics[max width=0.4\columnwidth]{figs/#1}\includegraphics[max width=0.4\columnwidth]{figs/#1}\end{figure}}
 
 \setlist[itemize]{nosep,leftmargin=1em}
 % \setlist{noitemsep}
