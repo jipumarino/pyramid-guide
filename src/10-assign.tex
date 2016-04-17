@@ -31,7 +31,7 @@ The display ``assign control to...'' must popup. Select and press MIDI CC with \
 
 \fitgraphics{assign_manager.png}
 
-MIDI channel and output of the current track appears in a box: a CC message must be linked to a channel (from 1 to 16) and to an output (midi A, midi B, USB). Selecting this box with \encodericon{} will auto-link the CC message to this channel and this output.
+MIDI channel and output of the current track appears in a box: a CC message must be linked to a channel (from 1 to 16) and to an output (MIDI A, MIDI B, USB). Selecting this box with \encodericon{} will auto-link the CC message to this channel and this output.
 
 \fitgraphics{assign_channel.png}
 
@@ -51,7 +51,7 @@ You can record the automation on the current track only if:
 
 \note{Note: as soon as you assign a CC control and move it to set the value, an automation message is created to store this value (you can display it or remove it in stepmode CC MESSAGES). This message will be sent at the start of the track, so your synthesizer will always have the right set value. You can disable this feature in SETTINGS > MISC > CC ASSIGN > AUTOREC OFF.}
 
-When an assigned encoder is moved or pressed, a popup is displayed, with the CC number (68), the CC value (111) and the CC midi channel (CH09A):
+When an assigned encoder is moved or pressed, a popup is displayed, with the CC number (68), the CC value (111) and the CC MIDI channel (CH09A):
 
 \fitgraphics{ASSIGN-CC.png}
 
@@ -116,6 +116,6 @@ This operation applies to all CC messages, pitch bend, pressure, program change 
 
 You can assign the two analog jack inputs (CV input and GATE input) to control in real-time CC messages and effect parameters. It's a great way to control Pyramid with your CV modules, or to create your own DIY analog controller.
 
-The voltage (0V to 5V) will be converted to a CC midi value (0 to127) or to an effect parameter value (for example the arpeggiator STYLE).
+The voltage (0V to 5V) will be converted to a CC MIDI value (0 to 127) or to an effect parameter value (for example the arpeggiator STYLE).
 
 Hold \btn{ASSIGN} and plug a mini jack on the input you want to assign (CV input or GATE input), the assign manager display will appear. Then select the CC message or the FX you want to assign. Moreover, the option ``CV IN MODE'' in SETTINGS will be autoset to CC MESSG, instead of CV/GATE.
