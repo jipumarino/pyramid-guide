@@ -263,11 +263,11 @@ With \btn{DISP} activated, the 16 pads flashes when tracks send MIDI events (not
 
 \section{About polyrhythms (advanced users)}
 
-Almost all types of polyrhythms can be handle by Pyramid. Some user wonder how can we achieve this if we can only set multiple of 2 in its right side (x/2, x/4, x/8...).
+Almost all types of polyrhythms can be handle by Pyramid. Some user wonder how can we achieve this if we can only set multiple of 2 in its right side (x/2, x/4, x/8\ldots).
 
 First of all, a 7/4 bar has the exact same length as a 4/4 bar. In a 7/4 bar, there is 7 quarternotes which are shorter than the ones in 4/4 bar. The lower number basically indicates the note length. 4/8 represents a bar of 4 eighth notes (the bar length is divided by two). 4/2 leads to 4 half notes (the bar length is multiplied by two).
 
-At the very beginning we implemented the representation using classical irrational time signatures (4/6, 3/3, 11/15...) but this is really hard to use. Imagine you start in 4/4, western common time signature. If you change the upper number to 3/4: you have 3 “quarternotes” in the same bar length. Change the lower number to 3: the time signature is now 3/3. It's exactly the same as the 3/4 but you changed the meaning of your writing: if the lower number is not a multiple of 2: it's an irrational notation, which means that we have 3 notes with a quarter note length same as the length of the quarter note in a 3/4 bar.
+At the very beginning we implemented the representation using classical irrational time signatures (4/6, 3/3, 11/15\ldots) but this is really hard to use. Imagine you start in 4/4, western common time signature. If you change the upper number to 3/4: you have 3 “quarternotes” in the same bar length. Change the lower number to 3: the time signature is now 3/3. It's exactly the same as the 3/4 but you changed the meaning of your writing: if the lower number is not a multiple of 2: it's an irrational notation, which means that we have 3 notes with a quarter note length same as the length of the quarter note in a 3/4 bar.
 
 Irrational writing leads to:
 
