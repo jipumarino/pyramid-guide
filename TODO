@@ -1,0 +1,23 @@
+TODO
+
+- turn some pictures to svg/pdf?
+- note in smaller font
+- hanging indent in chapter title (see Connectivity Examples)
+- change fit*graphics to fitgraphics with optional argument
+- fit half and third should group contigous images (see p.19)
+- consolidate *icon *btn commands
+- # --> # (missing in helvetica)
+- spacing before settings specs (p.45)
+- case of \btn{\ldots}
+- button height shouldn't depend on content p27
+- button midwidth (single numbers) p.32
+- remove/restyle subsection in TOC (note case of \\ in heading)
+- line 238 in 02-tex
+- how to fit :
+  [ ][ ][ ]
+  [ ][ ]
+- quotes in headings (see p.40)
+- fitthree and fittwo better solution
+- chapter name in page numbers of TOC, maybe use roman numerals
+- some way to remove empty arguments {}
+- comments/documentation in config section
