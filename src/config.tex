@@ -44,8 +44,9 @@
 \newcommand{\encodersicon}{\includegraphics{figs/encoders.png}}
 \newcommand{\touchpadicon}{\inlineicon{touchpad.png}}
 \newcommand{\encodericon}{\inlineicon{encoder.pdf}}
-\newcommand{\btncolor}[2]{\tcbox[top=0pt,bottom=0pt,left=1pt,right=1pt,arc=0.5pt,boxsep=0pt,colframe=#1,colback=#1,nobeforeafter,tcbox raise base]{#2}}
-\newcommand{\btn}[1]{\IfStrEqCase{#1}{{step}{\btncolor{pygreen}{STEP}}{live}{\btncolor{pyred}{LIVE}}{seq}{\btncolor{pyblue}{SEQ}}{track}{\btncolor{pyyellow}{TRACK}}{rec}{rec~\includegraphics[height=\fontcharht\font`\B]{figs/rec.pdf}}}[\btncolor{pygray}{#1}]}
+\newcommand{\btngray}[1]{\tcbox[top=0pt,bottom=0pt,left=1pt,right=1pt,arc=0.5pt,boxsep=0pt,colframe=pygray,colback=pygray,nobeforeafter,tcbox raise base]{#1}}
+\newcommand{\btncolor}[2]{\textbf{\quicksandfont\tcbox[top=0pt,bottom=0pt,left=1pt,right=1pt,arc=0.5pt,boxsep=0pt,colframe=#1,colback=#1,nobeforeafter,tcbox raise base]{#2}}}
+\newcommand{\btn}[1]{\IfStrEqCase{#1}{{STEP}{\btncolor{pygreen}{STEP}}{LIVE}{\btncolor{pyred}{LIVE}}{SEQ}{\btncolor{pyblue}{SEQ}}{TRACK}{\btncolor{pyyellow}{TRACK}}{rec}{rec~\includegraphics[height=\fontcharht\font`\B]{figs/rec.pdf}}}[\btngray{#1}]}
 \newcommand{\btni}[1]{\btn{#1}}
 
 \newcommand{\note}[1]{\textit{#1}}
@@ -62,7 +63,7 @@
 % - note in smaller font
 % - notes are sometimes captions really
 % - "tip" in smaller font
-% - \ldots instead of … and ...
+% - \ldots instead of … and \ldots
 % - hanging indent in chapter title (see Connectivity Examples)
 % - change fit*graphics to fitgraphics with optional argument
 % - fit half and third should group contigous images (see p.19)
@@ -88,6 +89,7 @@
 \setlength{\parskip}{0.5em} % consider zero
 \setmainfont{Helvetica}
 \newfontfamily\headingfont{Futura}
+\newfontfamily\quicksandfont{Quicksand}
 
 \titlespacing{\chapter}{0pt}{0pt}{1.5em}
 \titleformat{\chapter}[block]

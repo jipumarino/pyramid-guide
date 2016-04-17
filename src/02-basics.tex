@@ -11,9 +11,9 @@ A project can include up to 64 tracks:
 \item 16 tracks in the bank D
 \end{itemize}
 
-Regardless the mode you are using, hold \btni{track} and select the track of the current BANK you want to work on with one of the 16 pads \padsicon{} (for example TR03A).
+Regardless the mode you are using, hold \btni{TRACK} and select the track of the current BANK you want to work on with one of the 16 pads \padsicon{} (for example TR03A).
 
-To change the current track BANK (A/B/C/D), hold \btni{track} and press \btn{<} or \btn{>}.
+To change the current track BANK (A/B/C/D), hold \btni{TRACK} and press \btn{<} or \btn{>}.
 
 \fitgraphics{tracks_banks.png}
 
@@ -21,14 +21,14 @@ The current track number and its output channel is displayed on the screen:
 
 \fitgraphics{Track-number.png}
 
-You can quickly change the output channel of the selected track by pressing \btn{track} + \btncolor{pyyellow}{midi channel}. The great thing is that you can create multiple tracks with the same MIDI channel, so they can be activated (unmuted) together or separately.
+You can quickly change the output channel of the selected track by pressing \btn{TRACK} + \btncolor{pyyellow}{midi channel}. The great thing is that you can create multiple tracks with the same MIDI channel, so they can be activated (unmuted) together or separately.
 
-Note: as soon as you edit a note or a CC message (in \btn{live} or \btn{step} mode), the track is created and you can mute/unmute it.
+Note: as soon as you edit a note or a CC message (in \btn{LIVE} or \btn{STEP} mode), the track is created and you can mute/unmute it.
 
 
 \section{How to capture a performance}
 
-To record a live performance on the current track, press \btn{rec} in \btn{live} mode.
+To record a live performance on the current track, press \btn{rec} in \btn{LIVE} mode.
 
 You can play with the built-in keyboard \keypadicon{} and smartpads \smartpadsicon{} to record notes. Use the 5 assignables encoders \encodersicon{} and the assignable touchpad \touchpadicon{} to record CC and FX automations.
 
@@ -36,16 +36,16 @@ You can also use any kind of MIDI controllers to record notes and automations. I
 
 The number of notes polyphony is unlimited, as well as the number of CC automations per tracks. By default, there is no quantize, so it's great for capturing the ``human feel'' of your performance.
 
-Enter \btn{step} mode and press \btn{DISP} to view the piano roll and see the recorded notes:
+Enter \btn{STEP} mode and press \btn{DISP} to view the piano roll and see the recorded notes:
 
 \fitgraphics{STEP_DISPLAY.jpg}
 
-Of course, it's possible to add, remove, edit notes in a flash in \btn{step} mode with the step-by-step sequencer.
+Of course, it's possible to add, remove, edit notes in a flash in \btn{STEP} mode with the step-by-step sequencer.
 
 
 \section{How to use the step-by-step sequencer}
 
-Enter \btn{step} mode. The default stepmode is \textbf{NOTE}: that means that you can add, remove, edit \textbf{notes} on the current track:
+Enter \btn{STEP} mode. The default stepmode is \textbf{NOTE}: that means that you can add, remove, edit \textbf{notes} on the current track:
 
 \begin{itemize}
 \item to select the note (e.g. C4), rotate \encodericon{}
@@ -60,7 +60,7 @@ Press \btn{DISP} to view the piano roll and see the track notes:
 
 \fitgraphics{step_poly.png}
 
-Change the stepmode by holding \btn{step} and rotating \encodericon{}. Changing the stepmode basically changes the step-by-step mode. In brief, there is 5 stepmodes:
+Change the stepmode by holding \btn{STEP} and rotating \encodericon{}. Changing the stepmode basically changes the step-by-step mode. In brief, there is 5 stepmodes:
 
 \begin{itemize}
 \item \textbf{NOTE} (add, delete, edit notes)
@@ -75,7 +75,7 @@ Each of the 5 stepmodes can work together, except \textbf{EUCLID}. That means th
 
 \section{How to mute/unmute tracks}
 
-Enter \btn{track} mode. Press \btn{<} \btn{>} to select the track bank.
+Enter \btn{TRACK} mode. Press \btn{<} \btn{>} to select the track bank.
 
 Use the 16 pads \padsicon{} to mute/unmute created tracks, from TR01A to TR16D.
 
@@ -85,7 +85,7 @@ Press \btn{DISP} to display your tracks progressions:
 
 \fitgraphics{display_tracks_unmuted.png}
 
-Note: mute/unmute changes are in sync, depending on the \textbf{PERFORM} type selected in \btn{seq} mode.
+Note: mute/unmute changes are in sync, depending on the \textbf{PERFORM} type selected in \btn{SEQ} mode.
 
 
 \section{How to select the current sequence}
@@ -94,16 +94,16 @@ The current sequence number is displayed on the screen:
 
 \fitgraphics{SCREEN_SE.png}
 
-Regardless the mode you are using, hold \btni{seq} and select the sequence you want to work on with one of the 16 pads \padsicon{}. If you select an empty sequence, the track mute states of the last sequence will be applied to this new sequence.
+Regardless the mode you are using, hold \btni{SEQ} and select the sequence you want to work on with one of the 16 pads \padsicon{}. If you select an empty sequence, the track mute states of the last sequence will be applied to this new sequence.
 
 \note{Selecting a sequence can only be done with SEQ PERFORM enabled. This action is not available with SEQ PLAY or SEQ LOOP enabled, because the sequencer will play the defined sequence chain (and therefore the selected sequence = the played sequence).}
 
-Holding \btni{seq} and select the sequence will play the new selected sequence without waiting for the end of the currently playing sequence (instant jump). If you want to launch a new sequence after the end of the current sequence measure, enter the \btn{seq} mode and press one of the 16 pads \padsicon{} (without holding \btn{seq}).
+Holding \btni{SEQ} and select the sequence will play the new selected sequence without waiting for the end of the currently playing sequence (instant jump). If you want to launch a new sequence after the end of the current sequence measure, enter the \btn{SEQ} mode and press one of the 16 pads \padsicon{} (without holding \btn{SEQ}).
 
 
 \section{How to create and edit sequences}
 
-In \btn{track} mode, hold \btni{seq} and select the sequence you want to create or edit with one of the 16 pads \padsicon{}.
+In \btn{TRACK} mode, hold \btni{SEQ} and select the sequence you want to create or edit with one of the 16 pads \padsicon{}.
 
 The current sequence number is displayed on the screen:
 
@@ -114,11 +114,13 @@ Then mute/unmute your active tracks to build the sequence. As soon as you made a
 
 \section{How to play with sequences}
 
-Once you created several sequences, enter \btn{seq} mode to play with it. Make sure \textbf{PERFORM} is selected, in order the perform sequences on the fly, always in sync:
+Once you created several sequences, enter \btn{SEQ} mode to play with it. Make sure \textbf{PERFORM} is selected, in order the perform sequences on the fly, always in sync:
+
+\fitgraphics{SEQ_PERFORM.png}
 
 Press any sequence number \padsicon{} to launch it. Pyramid waits until the current sequence ends (the end of the bar, if ``1 BAR'' selected) and then it launches the new sequence right away. The new sequence is now playing in a loop, until you press another sequence number.
 
-You can select the delay Pyramid will wait before switching to the next sequence: instant, 1 beat, 1 bar, 2 bars, \ldots{} so you can deeply play with sequences!
+You can select the delay Pyramid will wait before switching to the next sequence: instant, 1 beat, 1 bar, 2 bars,\ldots{} so you can deeply play with sequences!
 
 
 \section{Tempo}
@@ -168,7 +170,7 @@ It is then possible to edit the effect with the 5 encoders \encodersicon{} and f
 
 \fitgraphics{Effects_arp_edit.jpg}
 
-\tip{With the effect manager activated, you can still play or add notes in \btn{live} and \btn{step} mode, mute/unmute tracks in \btn{track} mode, and even launch sequences in \btn{seq} mode.}
+\tip{With the effect manager activated, you can still play or add notes in \btn{LIVE} and \btn{STEP} mode, mute/unmute tracks in \btn{TRACK} mode, and even launch sequences in \btn{SEQ} mode.}
 
 Once you edited an effect, feel free to add other effects and change their positions in the chain (in the manager with \blackbtn{2ND} + \encodericon{}) to go further in experimentation.
 
@@ -196,7 +198,7 @@ Once the assignment is implemented, you can play in real time with all the contr
 
 \fitgraphics{ASSIGN-SWING.png}
 
-Press \btn{rec} in \btn{live} Mode and record automations on the current track:
+Press \btn{rec} in \btn{LIVE} Mode and record automations on the current track:
 
 \begin{itemize}
 \item If the control is assigned to a \textbf{CC message}, you can record the automation on the track only if the MIDI out and the MIDI channel of the CC is the same as the current track out settings (for example MIDI A channel 04).
@@ -210,7 +212,7 @@ Press \btn{rec} in \btn{live} Mode and record automations on the current track:
 
 Some modes include extra data that you can access by pressing \btn{DISP}. In these displays, the user interface never changes, it's another graphic representation.
 
-For example, in \btn{step} mode, pressing \btn{DISP} will lead to the piano roll editor:
+For example, in \btn{STEP} mode, pressing \btn{DISP} will lead to the piano roll editor:
 
 \fitgraphics{STEP_DISPLAY.jpg}
 
@@ -221,7 +223,7 @@ For example, in \btn{step} mode, pressing \btn{DISP} will lead to the piano roll
 
 This is one of the most helpful action, we seriously advise you to try it!
 
-To change the current track settings, in any mode, hold \btni{track} to use the shortcuts:
+To change the current track settings, in any mode, hold \btni{TRACK} to use the shortcuts:
 
 \begin{itemize}
 \item \btncolor{pyyellow}{solo}
@@ -231,7 +233,7 @@ To change the current track settings, in any mode, hold \btni{track} to use the 
 \item \btncolor{pyyellow}{time signature}
 \end{itemize}
 
-For example, when you are in \btn{step} mode, hold \btn{track} + \btncolor{pyyellow}{zoom} to change the edition resolution (from 25\% to 1600\%) with \encodericon{}, in a flash.
+For example, when you are in \btn{STEP} mode, hold \btn{TRACK} + \btncolor{pyyellow}{zoom} to change the edition resolution (from 25\% to 1600\%) with \encodericon{}, in a flash.
 
 
 \section{Play/Pause/Stop}
