@@ -1,119 +1,121 @@
 \chapter{Assign}
 
-Assign principles
+\section{Assign principles}
 
-The 5 encoders  , the analog inputs as well as the touchpad  X+Y axis, in order to control in real-time CC messages and effect parameters.
+The 5 encoders \encodersicon{}, the analog inputs as well as the touchpad \touchpadicon{} X+Y axis, in order to control in real-time CC messages and effect parameters.
 
 Once they are assigned, you can perform with them in all modes and submodes of Pyramid.
 
-To record automations of CC messages or effect parameters, you have to be in LIVE mode, REC enable.
+To record automations of CC messages or effect parameters, you have to be in \btn{live} mode, REC enable.
 
 Assignations are saved with the project and are independant of the current track and the current sequence. Selecting a new track or a new sequence will not unlink or change the assign. That means that you can work on the track TR05D and slide the touchpad to control a CC message or an effect parameter of the TR01A, perfect for live performance. They are always ready for use, very handy for simultaneous multi-tracks control.
 
 We tried to make the assignation process as easy as possible. If you love to play the touchpad for creating automations, it's fast and simple to reassign the control to another CC message or effect parameter and record your performance.
 
- TIP  Once an encoder is assigned, press it to display its set value. In LIVE mode, the encoder value will be displayed on the 16 leds during rotation.
+\tip{Once an encoder is assigned, press it to display its set value. In \btn{live} mode, the encoder value will be displayed on the 16 leds during rotation.}
 
-You can record automations on a track filled with notes, or on a blank track. This allows to create tracks filled only with automations, and thus mute/unmute and sequence CC messages + effect parameters automations.
+\note{You can record automations on a track filled with notes, or on a blank track. This allows to create tracks filled only with automations, and thus mute/unmute and sequence CC messages + effect parameters automations.}
 
-How to assign a CC message
 
-Hold ASSIGN and...
-- turn an encoder  , or
-- slide the touchpad  X or Y axis, or
-- plug a jack into the CV or the GATE input.
+\section{How to assign a CC message}
 
-The display "assign control to..." must popup. Select and press MIDI CC with : 
+Hold \btn{ASSIGN} and...
 
- 
+\begin{itemize}
+\item turn an encoder \encodersicon{}, or
+\item slide the touchpad \touchpadicon{} X or Y axis, or
+\item plug a jack into the CV or the GATE input.
+\end{itemize}
 
-Midi channel and output of the current track appears in a box: a CC message must be linked to a channel (from 1 to 16) and to an output (midi A, midi B, USB). Selecting this box with  will auto-link the CC message to this channel and this output. 
+The display ``assign control to...'' must popup. Select and press MIDI CC with \encodericon{}:
 
- 
+\fitgraphics{assign_manager.png}
 
-Now select the CC message number, from CC0 to CC119. Scroll the list and press   to assign the CC message. Holding  2ND  and rotate  allows fast scrolling.
+MIDI channel and output of the current track appears in a box: a CC message must be linked to a channel (from 1 to 16) and to an output (midi A, midi B, USB). Selecting this box with \encodericon{} will auto-link the CC message to this channel and this output.
 
- 
+\fitgraphics{assign_channel.png}
 
-At the end of the CC list, you can find the PITCH BEND, the PRESSURE (aftertouch) and the PROGRAM CHANGE midi messages:
+Now select the CC message number, from CC0 to CC119. Scroll the list and press \encodericon{} to assign the CC message. Holding \blackbtn{2ND} and rotate \encodericon{} allows fast scrolling.
 
- 
+\fitgraphics{assign_CC.png}
+
+At the end of the CC list, you can find the \textbf{PITCH BEND}, the \textbf{PRESSURE} (aftertouch) and the \textbf{PROGRAM CHANGE} MIDI messages:
+
+\fitgraphics{assign_pitch.png}
 
 You can record the automation on the current track only if:
-- the CC channel (e.g. CH14) is the same as the track channel
-- the output of the CC is the same as the track
+\begin{itemize}
+\item the CC channel (e.g. CH14) is the same as the track channel
+\item the output of the CC is the same as the track
+\end{itemize}
 
-Note: as soon as you assign a CC control and move it to set the value, an automation message is created to store this value (you can display it or remove it in stepmode CC MESSAGES). This message will be sent at the start of the track, so your synthesizer will always have the right set value. You can disable this feature in SETTINGS > MISC > CC ASSIGN > AUTOREC OFF.
+\note{Note: as soon as you assign a CC control and move it to set the value, an automation message is created to store this value (you can display it or remove it in stepmode CC MESSAGES). This message will be sent at the start of the track, so your synthesizer will always have the right set value. You can disable this feature in SETTINGS > MISC > CC ASSIGN > AUTOREC OFF.}
 
 When an assigned encoder is moved or pressed, a popup is displayed, with the CC number (68), the CC value (111) and the CC midi channel (CH09A):
 
+\fitgraphics{ASSIGN-CC.png}
 
+\section{How to assign an effect parameter}
 
-How to assign an effect parameter
-
-Hold ASSIGN and...
-- turn an encoder , or
-- slide the touchpad  X or Y axis, or
+Hold \btn{ASSIGN} and...
+- turn an encoder \encodersicon{}, or
+- slide the touchpad \touchpadicon{} X or Y axis, or
 - plug a jack into the CV or the GATE input.
 
-The display "assign control to..." must popup. Select and press EFFECT PARAM with : 
+The display ``assign control to...'' must popup. Select and press \textbf{EFFECT PARAM} with \encodericon{}:
 
- 
+\fitgraphics{assign_manager.png}
 
-Select the track containing the effect you want to assign with : 
+Select the track containing the effect you want to assign with \encodericon{}:
 
- 
+\fitgraphics{assign_track_fx.png}
 
-Select the effect you want to assign with : 
+Select the effect you want to assign with \encodericon{}:
 
- 
+\fitgraphics{assign_type_fx.png}
 
-Select the parameter you want to assign with : 
+Select the parameter you want to assign with \encodericon{}:
 
- 
+\fitgraphics{assign_param_fx.png}
 
-You can record the effect parameter automation on the current track only if the effect belongs to the current track.
+\note{You can record the effect parameter automation on the current track only if the effect belongs to the current track.}
 
 When an assigned encoder is moved or pressed, a popup is displayed, with the effect (ARP), the effect parameter (STYLE), the effect value (DOWN), and the effect track (01A):
 
+\fitgraphics{ASSIGN-ARP.png}
 
-
-Automation recording and overdub
+\section{Automation recording and overdub}
 
 Unlike notes, automations are not recorded with overdub. That means that the player erase the existing automation step-by-step.
 
-For example, if you activate REC  in LIVE mode and progressively change an assigned value (e.g. CC10) during the first loop, an automation is created:
+For example, if you activate \btn{rec} in \btn{live} mode and progressively change an assigned value (e.g. CC10) during the first loop, an automation is created:
 
+\fitgraphics{overdubCC_00.png}
+\fitgraphics{overdubCC_01.png}
+\fitgraphics{overdubCC_02.png}
+\fitgraphics{overdubCC_03.png}
 
+If you don't disable \btn{rec} during the second loop, and even if you don't change the assigned value, the automation will be erased step-by-step:
 
+\fitgraphics{overdubCC_04.png}
+\fitgraphics{overdubCC_05.png}
+\fitgraphics{overdubCC_06.png}
 
+You can of course record another automation if \btn{rec} still enabled:
 
-
-
-
-
-If you don't disable REC  during the second loop, and even if you don't change the assigned value, the automation will be erased step-by-step:
-
-
-
-
-
-
-
-You can of course record an other automation if REC  still enabled:
-
-
+\fitgraphics{overdubCC_03.png}
 
 Disable REC  to fix the automation:
 
-
+\fitgraphics{display-CC-pan-zoom.png}
 
 This operation applies to all CC messages, pitch bend, pressure, program change and effects parameters.
 
-Note about analog input voltage assignation
+
+\section{Note about analog input voltage assignation}
 
 You can assign the two analog jack inputs (CV input and GATE input) to control in real-time CC messages and effect parameters. It's a great way to control Pyramid with your CV modules, or to create your own DIY analog controller.
 
 The voltage (0V to 5V) will be converted to a CC midi value (0 to127) or to an effect parameter value (for example the arpeggiator STYLE).
 
-Hold ASSIGN and plug a mini jack on the input you want to assign (CV input or GATE input), the assign manager display will appear. Then select the CC message or the FX you want to assign. Moreover, the option "CV IN MODE" in SETTINGS will be autoset to CC MESSG, instead of CV/GATE.
+Hold \btn{ASSIGN} and plug a mini jack on the input you want to assign (CV input or GATE input), the assign manager display will appear. Then select the CC message or the FX you want to assign. Moreover, the option ``CV IN MODE'' in SETTINGS will be autoset to CC MESSG, instead of CV/GATE.
