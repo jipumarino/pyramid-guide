@@ -1,0 +1,36 @@
+\newcommand{\inlineicon}[1]{\includegraphics[height=\fontcharht\font`\B]{figs/#1}}
+\newcommand{\tracklenicon}{\inlineicon{page_bar_number.png}}
+\newcommand{\pageposicon}{\inlineicon{page_selected.png}}
+\newcommand{\playerposicon}{\inlineicon{page_player.png}}
+\newcommand{\baricon}{\inlineicon{page_non_selected.png}}
+\newcommand{\playicon}{\inlineicon{play.pdf}}
+\newcommand{\relatchicon}{\inlineicon{Live_relatch.png}}
+\newcommand{\holdicon}{\inlineicon{Live_hold.png}}
+\newcommand{\stopicon}{\inlineicon{stop.pdf}}
+\newcommand{\padsicon}{\inlineicon{stepbystep.png}}
+\newcommand{\stepbystepicon}{\inlineicon{stepbystep_selection.png}}
+\newcommand{\keypadicon}{\inlineicon{keypad.png}}
+\newcommand{\smartpadsicon}{\includegraphics{figs/smartpads.png}}
+\newcommand{\encodersicon}{\includegraphics{figs/encoders.png}}
+\newcommand{\touchpadicon}{\inlineicon{touchpad.png}}
+\newcommand{\encodericon}{\inlineicon{encoder.pdf}}
+\newcommand{\btngray}[1]{\tcbox[top=0pt,bottom=0pt,left=1pt,right=1pt,arc=0.5pt,boxsep=0pt,colframe=pygray,colback=pygray,nobeforeafter,tcbox raise base]{#1}}
+\newcommand{\btncolor}[2]{\textbf{\quicksandfont\tcbox[top=0pt,bottom=0pt,left=1pt,right=1pt,arc=0.5pt,boxsep=0pt,colframe=#1,colback=#1,nobeforeafter,tcbox raise base]{#2}}}
+\newcommand{\btn}[1]{\IfStrEqCase{#1}{{STEP}{\btncolor{pygreen}{STEP}}{LIVE}{\btncolor{pyred}{LIVE}}{SEQ}{\btncolor{pyblue}{SEQ}}{TRACK}{\btncolor{pyyellow}{TRACK}}{rec}{rec~\includegraphics[height=\fontcharht\font`\B]{figs/rec.pdf}}}[\btngray{#1}]}
+\newcommand{\btni}[1]{\btn{#1}}
+
+
+\newcommand{\settingname}[1]{\blackbtn{#1}\\}
+\newcommand{\settingopt}[1]{\btngray{#1}}
+
+\newcommand{\note}[1]{\textit{#1}}
+
+\newcommand{\tip}[1]{\tcbox[top=0pt,bottom=0pt,left=1pt,right=1pt,arc=0.5pt,boxsep=0pt,colframe=tipblue,colback=tipblue,nobeforeafter,tcbox raise=0pt]{\textcolor{white}{\scriptsize TIP}} #1}
+\newcommand{\blackbtn}[1]{\btncolor{black}{\textcolor{white}{#1}}}
+
+\newcommand{\fitgraphics}[1]{\begin{figure}[H]\centering\includegraphics[max width=\columnwidth]{figs/#1}\end{figure}}
+
+\newcommand{\fittwographics}[2]{\includegraphics[max width=0.5\columnwidth]{figs/#1}\includegraphics[max width=0.5\columnwidth]{figs/#2}}
+\newcommand{\fitthreegraphics}[3]{\begin{figure}[H]\includegraphics[max width=0.333333\columnwidth]{figs/#1}\includegraphics[max width=0.333333\columnwidth]{figs/#2}\includegraphics[max width=0.333333\columnwidth]{figs/#3}\end{figure}}
+
+\newcommand{\fithalfgraphics}[1]{\begin{figure}[H]\centering\includegraphics[max width=0.4\columnwidth]{figs/#1}\includegraphics[max width=0.4\columnwidth]{figs/#1}\end{figure}}
