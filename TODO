@@ -1,7 +1,6 @@
 TODO
 
 - Buttons
-  - Button height shouldn't depend on content (case of \btn{\ldots}, or copy button, p.27)
   - Button minimum width, like single numbers (p.32)
 
 - Images in rows

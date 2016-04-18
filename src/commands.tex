@@ -23,8 +23,8 @@
 \newcommand{\encodericon}{\inlineicon{encoder.pdf}}
 
 % Buttons
-\newcommand{\btngray}[1]{\tcbox[top=0pt,bottom=0pt,left=1pt,right=1pt,arc=0.5pt,boxsep=0pt,colframe=pygray,colback=pygray,nobeforeafter,tcbox raise base]{#1}}
-\newcommand{\btncolor}[2]{\textbf{\quicksandfont\tcbox[top=0pt,bottom=0pt,left=1pt,right=1pt,arc=0.5pt,boxsep=0pt,colframe=#1,colback=#1,nobeforeafter,tcbox raise base]{#2}}}
+\newcommand{\btngray}[1]{\tcbox[top=0pt,bottom=0pt,left=1pt,right=1pt,arc=0.5pt,boxsep=0pt,colframe=pygray,colback=pygray,nobeforeafter,height=10pt,valign=center,tcbox raise=-1.5pt]{#1\vphantom{B}}}
+\newcommand{\btncolor}[2]{\textbf{\quicksandfont\tcbox[top=0pt,bottom=0pt,left=1pt,right=1pt,arc=0.5pt,boxsep=0pt,colframe=#1,colback=#1,nobeforeafter,height=10pt,valign=center,tcbox raise=-1.5pt]{#2\vphantom{B}}}}
 \newcommand{\btn}[1]{\IfStrEqCase{#1}{{STEP}{\btncolor{pygreen}{STEP}}{LIVE}{\btncolor{pyred}{LIVE}}{SEQ}{\btncolor{pyblue}{SEQ}}{TRACK}{\btncolor{pyyellow}{TRACK}}{rec}{rec~\includegraphics[height=\fontcharht\font`\B]{figs/rec.pdf}}}[\btngray{#1}]}
 \newcommand{\btni}[1]{\btn{#1}}
 \newcommand{\blackbtn}[1]{\btncolor{black}{\textcolor{white}{#1}}}
