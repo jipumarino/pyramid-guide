@@ -9,7 +9,6 @@ TODO
 
 - TOC
   - Beware of linebreaks in heading names (separate formatting for chapter and TOC?)
-  - Missing chapter name in footer of TOC, maybe use roman numerals.
 
 - Images in rows
   - Generic solution instead of fitthree/fittwo
