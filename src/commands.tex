@@ -1,5 +1,6 @@
 % Icons
 \newcommand{\inlineicon}[1]{\includegraphics[height=\fontcharht\font`\B]{figs/#1}}
+\newcommand{\inlinelargeicon}[1]{\begingroup\setbox0=\hbox{\includegraphics[width=3em]{figs/#1}}\parbox{\wd0}{\box0}\endgroup}
 
 % Screen icons
 \newcommand{\tracklenicon}{\inlineicon{page_bar_number.png}}
@@ -10,13 +11,13 @@
 \newcommand{\holdicon}{\inlineicon{Live_hold.png}}
 
 % Physical controls icons
-\newcommand{\keypadicon}{\inlineicon{keypad.png}}
-\newcommand{\smartpadsicon}{\includegraphics{figs/smartpads.png}}
-\newcommand{\encodersicon}{\includegraphics{figs/encoders.png}}
-\newcommand{\touchpadicon}{\inlineicon{touchpad.png}}
+\newcommand{\encodersicon}{\inlinelargeicon{encoders.pdf}}
+\newcommand{\keypadicon}{\inlinelargeicon{keypad.pdf}}
+\newcommand{\smartpadsicon}{\inlinelargeicon{smartpads.pdf}}
+\newcommand{\stepbystepselectionicon}{\inlinelargeicon{stepbystep_selection.pdf}}
+\newcommand{\stepbystepicon}{\inlinelargeicon{stepbystep.pdf}}
 
-\newcommand{\stepbystepselectionicon}{\inlineicon{stepbystep_selection.pdf}}
-\newcommand{\stepbystepicon}{\inlineicon{stepbystep.pdf}}
+\newcommand{\touchpadicon}{\inlineicon{touchpad.pdf}}
 \newcommand{\playicon}{\inlineicon{play.pdf}}
 \newcommand{\stopicon}{\inlineicon{stop.pdf}}
 \newcommand{\encodericon}{\inlineicon{encoder.pdf}}

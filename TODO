@@ -1,8 +1,5 @@
 TODO
 
-- Icons
-  - Convert to PDF
-
 - Buttons
   - Button height shouldn't depend on content (case of \btn{\ldots}, or copy button, p.27)
   - Button minimum width, like single numbers (p.32)
@@ -19,6 +16,7 @@ TODO
   - Consolidate *icon *btn commands
   - Find a way to remove empty arguments {} (xspace?)
   - Investigate possible titlespacing/titleformat overlap
+  - Format newcommands in multiple lines (probably with line-ending comments)
 
 - Documentation
   - Comments in config section
