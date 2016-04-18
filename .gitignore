@@ -3,6 +3,3 @@
 *.toc
 *.out
 /book.pdf
-
-# added by GitSavvy
-/.gitignore
