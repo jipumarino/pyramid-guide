@@ -3,14 +3,8 @@ TODO
 - Buttons
   - Button minimum width, like single numbers (p.32)
 
-- Images in rows
-  - Generic solution instead of fitthree/fittwo
-  - Ideally, autogroup contiguous when specifying 1/3 or 1/2 size
-  - Specific case:
-    [ ][ ][ ]
-    [ ][ ]
-
 - Refactor
+  - Fit two/grid/etc graphics is awesomely brittle
   - Change fit*graphics to fitgraphics with optional argument
   - Consolidate *icon *btn commands
   - Find a way to remove empty arguments {} (xspace?)

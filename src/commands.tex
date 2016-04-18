@@ -35,9 +35,12 @@
 
 % Figures
 \newcommand{\fitgraphics}[1]{\begin{figure}[H]\centering\includegraphics[max width=\columnwidth]{figs/#1}\end{figure}}
-\newcommand{\fittwographics}[2]{\includegraphics[max width=0.5\columnwidth]{figs/#1}\includegraphics[max width=0.5\columnwidth]{figs/#2}}
-\newcommand{\fitthreegraphics}[3]{\begin{figure}[H]\includegraphics[max width=0.333333\columnwidth]{figs/#1}\includegraphics[max width=0.333333\columnwidth]{figs/#2}\includegraphics[max width=0.333333\columnwidth]{figs/#3}\end{figure}}
 \newcommand{\fithalfgraphics}[1]{\begin{figure}[H]\centering\includegraphics[max width=0.4\columnwidth]{figs/#1}\includegraphics[max width=0.4\columnwidth]{figs/#1}\end{figure}}
+\newcommand{\fittwographics}[2]{\begin{figure}[H]\includegraphics[width=0.5\columnwidth]{figs/#1}\includegraphics[width=0.5\columnwidth]{figs/#2}\end{figure}}
+\newcommand{\fitthreegraphics}[3]{\begin{figure}[H]\includegraphics[width=0.333333\columnwidth]{figs/#1}\includegraphics[width=0.333333\columnwidth]{figs/#2}\includegraphics[width=0.333333\columnwidth]{figs/#3}\end{figure}}
+\newcommand{\fitfourgraphics}[4]{\begin{figure}[H]\includegraphics[width=0.25\columnwidth]{figs/#1}\includegraphics[width=0.25\columnwidth]{figs/#2}\includegraphics[width=0.25\columnwidth]{figs/#3}\includegraphics[width=0.25\columnwidth]{figs/#4}\end{figure}}
+\newcommand{\fittwobytwographics}[4]{\begin{figure}[H]\includegraphics[width=0.5\columnwidth]{figs/#1}\includegraphics[width=0.5\columnwidth]{figs/#2}\\\includegraphics[width=0.5\columnwidth]{figs/#3}\includegraphics[width=0.5\columnwidth]{figs/#4}\end{figure}}
+\newcommand{\fitfivegraphics}[5]{\begin{figure}[H]\includegraphics[width=0.333333\columnwidth]{figs/#1}\includegraphics[width=0.333333\columnwidth]{figs/#2}\includegraphics[width=0.333333\columnwidth]{figs/#3}\\\includegraphics[width=0.333333\columnwidth]{figs/#4}\includegraphics[width=0.333333\columnwidth]{figs/#5}\end{figure}}
 
 % Other
 \newcommand{\settingname}[1]{\blackbtn{#1}\\}
