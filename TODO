@@ -7,9 +7,6 @@ TODO
   - Button height shouldn't depend on content (case of \btn{\ldots}, or copy button, p.27)
   - Button minimum width, like single numbers (p.32)
 
-- TOC
-  - Beware of linebreaks in heading names (separate formatting for chapter and TOC?)
-
 - Images in rows
   - Generic solution instead of fitthree/fittwo
   - Ideally, autogroup contiguous when specifying 1/3 or 1/2 size
