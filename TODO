@@ -8,9 +8,9 @@ TODO
   - Button minimum width, like single numbers (p.32)
 
 - TOC
-  - Remove or restyle subsection headings in TOC (note case of \\ in heading)
+  - Remove or restyle subsection headings in TOC
   - Beware of linebreaks in heading names (separate formatting for chapter and TOC?)
-  - Chapter name along page numbers of TOC, maybe use roman numerals.
+  - Missing chapter name in footer of TOC, maybe use roman numerals.
 
 - Images in rows
   - Generic solution instead of fitthree/fittwo
