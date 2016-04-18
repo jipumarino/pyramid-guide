@@ -31,9 +31,9 @@
   {\uppercase}
 
 
-% Set chapterstyle as the page style for chapter opening pages
+% Set chapteropeningpagestyle as the page style for chapter opening pages
 \makeatletter
-\renewcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi\thispagestyle{chapterstyle}\global\@topnum\z@\@afterindentfalse\secdef\@chapter\@schapter}
+\renewcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi\thispagestyle{chapteropeningpagestyle}\global\@topnum\z@\@afterindentfalse\secdef\@chapter\@schapter}
 \makeatother
 
 
@@ -65,9 +65,9 @@
 
 % Footer pagestyles
 
-\newpagestyle{contentstyle}{
+\newpagestyle{bodypagestyle}{
   \setfoot[\thepage\hspace{1em}|\hspace{1em}\chaptertitle][][]{}{}{\chaptertitle\hspace{1em}|\hspace{1em}\thepage}
 }
-\newpagestyle{chapterstyle}{
+\newpagestyle{chapteropeningpagestyle}{
   \setfoot[\thepage][][]{}{}{\thepage}
 }
