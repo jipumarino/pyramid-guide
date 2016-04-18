@@ -3,9 +3,6 @@ TODO
 - Icons
   - Convert to PDF
 
-- Text formatting
-  - Hanging indent in chapter title (see Connectivity Examples)
-
 - Buttons
   - Button height shouldn't depend on content (case of \btn{\ldots}, or copy button, p.27)
   - Button minimum width, like single numbers (p.32)
@@ -26,6 +23,7 @@ TODO
   - Change fit*graphics to fitgraphics with optional argument
   - Consolidate *icon *btn commands
   - Find a way to remove empty arguments {} (xspace?)
+  - Investigate possible titlespacing/titleformat overlap
 
 - Documentation
   - Comments in config section
