@@ -7,6 +7,8 @@
 \newfontfamily\futurafont{Futura}
 \newfontfamily\quicksandfont{Quicksand}
 
+
+% Headings formatting
 \titlespacing{\chapter}{0pt}{0pt}{1.5em}
 \titleformat{\chapter}[hang]
   {\fontsize{25}{25}\futurafont\raggedright}
@@ -28,16 +30,14 @@
   {0.5em}
   {\uppercase}
 
+
+% Set chapterstyle as the page style for chapter opening pages
 \makeatletter
-\renewcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi
-\thispagestyle{chapterstyle}
-                    \global\@topnum\z@
-                    \@afterindentfalse
-                    \secdef\@chapter\@schapter}
-% \renewcommand\tableofcontents{
-% \if@twocolumn \@restonecoltrue \onecolumn \else \@restonecolfalse \fi \chapter *{\contentsname \@mkboth {\MakeUppercase \contentsname }{\MakeUppercase \contentsname }}\@starttoc {toc}\if@restonecol \twocolumn \fi}
+\renewcommand\chapter{\if@openright\cleardoublepage\else\clearpage\fi\thispagestyle{chapterstyle}\global\@topnum\z@\@afterindentfalse\secdef\@chapter\@schapter}
 \makeatother
 
+
+% Force TOC to use pagestyle
 \makeatletter
 \def\tableofcontents{\chapter*{Contents}\@starttoc{toc}}
 \makeatother
@@ -46,10 +46,12 @@
 % TOC: only show chapters and sections
 \setcounter{tocdepth}{1}
 
+
+% Don't add numbers for sections and below
 \setcounter{secnumdepth}{0}
 
 
-% Cover page
+% Cover page formatting
 
 \pretitle{\begin{center}\includegraphics{figs/squarplogo.png}\\\fontsize{30}{30}\futurafont}
 \posttitle{\end{center}}
