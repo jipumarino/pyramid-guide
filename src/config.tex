@@ -51,22 +51,13 @@
 \setcounter{secnumdepth}{0}
 
 
-% Cover page formatting
-
-\pretitle{\begin{center}\includegraphics{figs/squarplogo.png}\\\fontsize{30}{30}\futurafont}
-\posttitle{\end{center}}
-
-\preauthor{\begin{center}\fontsize{18}{18}\futurafont}
-\postauthor{\end{center}}
-
-\predate{}
-\postdate{}
-
-
 % Footer pagestyles
 
 \newpagestyle{bodypagestyle}{
   \setfoot[\thepage\hspace{1em}|\hspace{1em}\chaptertitle][][]{}{}{\chaptertitle\hspace{1em}|\hspace{1em}\thepage}
+}
+\newpagestyle{coverpagestyle}{
+  \setfoot[][][]{}{}{}
 }
 \newpagestyle{chapteropeningpagestyle}{
   \setfoot[\thepage][][]{}{}{\thepage}
